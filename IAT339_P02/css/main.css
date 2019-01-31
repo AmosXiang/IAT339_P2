@@ -71,6 +71,12 @@
     font-style: normal;
 
 }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
     font-family: "Times New Roman", Times, serif;
@@ -91,7 +97,12 @@ body {
     font-family: audreyregular, sans-serif;
   }
   
-  h2 {
+  .rowSelecter h2 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .element h2 {
     margin-top: 6rem;
   }
   
@@ -308,6 +319,14 @@ body {
   }
   .divFont{
     font-family:audreyregular, sans-serif;
+  }
+
+  .firstOverlay img{
+    
+      width: 100%;
+      height: auto;
+      padding: 5px;
+  
   }
   .click-img{
     width:30rem;
@@ -580,5 +599,60 @@ margin-top: 10rem;
 
 #options{
   padding-top: 5%;
+}
+/* https://codepen.io/bkainteractive/pen/VLxLYp */
+.slick-dots {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.slick-dots li {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.slick-dots li.slick-active button {
+  background-color: black;
+}
+.slick-dots li button {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: #999;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.slick-dots li :hover {
+  background-color: black;
+}
+/* Custom Arrow */
+.prev {
+  color: #999;
+  position: absolute;
+  top: 38%;
+  left: -2em;
+  font-size: 1.5em;
+}
+.prev :hover {
+  cursor: pointer;
+  color: black;
+}
+.next {
+  color: #999;
+  position: absolute;
+  top: 38%;
+  right: -2em;
+  font-size: 1.5em;
+}
+.next :hover {
+  cursor: pointer;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .next {
+    display: none !important;
+  }
 }
 
