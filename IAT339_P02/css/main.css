@@ -1,0 +1,779 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+@font-face {
+    font-family: 'audreyitalic';
+    src: url('../fonts/audrey-normaloblique-webfont.woff2') format('woff2'),
+         url('../fonts/audrey-normaloblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreyregular';
+    src: url('../fonts/audrey-normal-webfont.woff2') format('woff2'),
+         url('../fonts/audrey-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreymedium_oblique';
+    src: url('audrey-mediumoblique-webfont.woff2') format('woff2'),
+         url('audrey-mediumoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreymedium';
+    src: url('audrey-medium-webfont.woff2') format('woff2'),
+         url('audrey-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreybold_italic';
+    src: url('../fonts/audrey-boldoblique-webfont.woff2') format('woff2'),
+         url('../fonts/audrey-boldoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'audreybold';
+    src: url('audrey-bold-webfont.woff2') format('woff2'),
+         url('audrey-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* -------------------------------------- */
+
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    padding: 2rem;
+    text-decoration: none;
+  }
+  
+  
+  .element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: black;
+    margin-top: 5rem;
+    font-family: audreybold_italic, sans-serif;
+  }
+  .element p{
+    font-family: audreyregular, sans-serif;
+  }
+  
+  h2 {
+    margin-top: 6rem;
+  }
+  
+  h3 {
+    font-style: italic;
+    margin-top: 1rem;
+  }
+  
+  h4 {
+    margin-bottom: 0.25rem;
+  }
+  
+
+  p {
+    color:rgb(70,70,70);
+   
+  }
+ .figurer p{
+    margin-top: 0;
+    font-size:1.5rem;
+    margin-bottom:0.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+  }
+  nav a:hover, nav a:focus {
+    text-decoration: none;
+  }
+  
+  code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+  }
+  
+  
+  /* 
+    INTERACTIVE ELEMENTS -------------------
+  */
+  
+  /* Styling for the navigation button */
+  .button-nav {
+    display: inline-block;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(50,50,50);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+  }
+  
+  .button-nav:hover, .button-nav:focus {
+    background-color: rgb(200,200,200);
+  }
+  
+  .nav-hove {
+    display: inline-block;
+    padding: 0.4rem;
+    color: rgb(106, 248, 217);
+    background-color: rgb(50,50,50);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+  }
+  .nav-hove:hover, .button-nav:focus {
+    background-color: rgb(200,200,200);
+  }
+  .image-link {
+    display: inline-block;
+    padding: 0.4rem;
+    color: rgb(106, 248, 217);
+    background-color: rgb(50,50,50);
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+  }
+  .image-link:hover, .button-nav:focus {
+    background-color: rgb(240, 149, 149);
+  }
+  /* 
+    TEXT ELEMENTS -------------------
+  */
+  .paragh{
+    width:70%;
+  }
+  
+  /* 
+    COMBINED ELEMENTS -------------------
+  */
+  input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+  }
+  
+  input:hover {
+    border: 1px solid #999;
+    border-radius: 5px;
+  }
+  
+  input:focus:hover{
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+    border-radius:0;
+    
+  }
+  
+  *,
+  *:before,
+  *:after {
+     box-sizing: border-box;
+  }
+  form {
+    border: 1px solid #c6c7cc;
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    width: 240px;
+  }
+  fieldset {
+    border: 0;
+    
+   
+  }
+  input {
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+  .account-info {
+    padding: 20px 40px 20px 20px;
+  }
+  .account-info label {
+    color: #395870;
+    display: block;
+    font-weight: bold;
+    margin-right: 50px;
+  }
+ /* this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h  */
+.navbar-header{
+    font-family: audreybold_italic, sans-serif;
+    
+} 
+.navbar {
+    font-family: audreyregular, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 14px !important;
+    letter-spacing: 4px;
+    opacity: 1;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #2e2e2e !important;
+  }
+  .navbar-nav li a:hover {
+    color: rgb(99, 163, 108) !important;
+    border-top:0.2rem #2e2e2e solid; 
+  }
+  #go :hover{
+    border-top:0rem #2e2e2e solid; 
+  }
+  #go1 :hover{
+    border-top:0rem #2e2e2e solid; 
+  }
+  #go2 :hover{
+    border-top:0rem #2e2e2e solid; 
+  }
+ 
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: rgb(99, 163, 108) !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: rgb(184, 206, 133) !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: rgb(221, 240, 170) !important;
+  }
+  
+  .product-list p{
+    float:left;
+    padding-left:1rem;
+  }
+
+
+
+  .box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-top:0.5rem;
+   
+    margin-right: 2rem;
+    width:80%;
+    padding-left: 20%;
+  }
+  .space{
+    margin-top: 8rem;
+    margin-left: 10%;
+  }
+  .box h1{
+    padding-top: 7rem;
+  }
+  .cart-text{
+    font-family:audreyregular, sans-serif;
+  }
+  .divFont{
+    font-family:audreyregular, sans-serif;
+  }
+  .click-img{
+    width:30rem;
+    height:36rem;
+    transition: opacity 0.5s;
+    margin:  0rem;
+  }
+  .click-img:hover, .click-img:focus{
+    opacity: 0.6;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(221, 240, 170);
+  }
+  .intext-link {
+    text-decoration:none;
+    color:rgb(44, 136, 90);
+    font-size:1.1rem;
+    margin:0rem;
+    display: block;
+    float:right;
+    
+  }
+  .intext-link:hover, .intext-link:focus{
+    color:rgb(140, 158, 89);
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+  }
+  .cart{
+    font-size:1.2rem;
+    padding: 0.5rem 0.7rem;
+    color:rgb(250,250,250);
+    background-color:rgb(177, 192, 134);
+    text-decoration: none;
+    display:block;
+    margin-top:4.5rem;
+    margin-right:3rem;
+    margin-left:3rem;
+    text-transform: uppercase;
+    padding-left: 1.4rem;
+  }
+  
+  .cart a {
+    display:block;
+  }
+  
+  .cart:hover, .cart:focus {
+    text-decoration: none;
+    color:rgb(202, 237, 169);
+    border:0.05rem rgb(221, 240, 170) solid;
+    background-color: rgb(27, 154, 98);
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    
+  }
+  .checkOut{
+    font-size:1.2rem;
+    padding: 0.5rem 0.7rem;
+    
+    color:white;
+    background-color:rgb(177, 192, 134);
+    text-decoration: none;
+    display:block;
+    margin-right:3rem;
+    margin-left:0rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    padding-left: 1.4rem;
+    
+  }
+  
+  .checkOut a {
+    display:block;
+  }
+  
+  .checkOut:hover, .checkOut:focus {
+    text-decoration: none;
+    color:rgb(202, 237, 169);
+    border:0.05rem rgb(221, 240, 170) solid;
+    background-color: rgb(27, 154, 98);
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+
+  .Cancel{
+    font-size:0.8rem;
+    padding: 0.5rem 0.7rem;
+    color:rgb(202, 237, 169);
+    border:0.05rem rgb(221, 240, 170) solid;
+    text-decoration: none;
+    display:block;
+    margin-right:3rem;
+    margin-left:0rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    padding-left: 1.4rem;
+    
+  }
+  
+  .Cancel a {
+    display:block;
+  }
+  
+  .Cancel:hover, .Cancel:focus {
+    text-decoration: none;
+    color:rgb(202, 237, 169);
+    border:0.05rem rgb(27, 154, 98) solid;
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+
+  .confrom{
+    font-size:1.2rem;
+    padding: 0.5rem 0.7rem;
+    color:white;
+    background-color:rgb(177, 192, 134);
+    text-decoration: none;
+    display:block;
+    margin-right:3rem;
+    margin-left:0rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    padding-left: 1.4rem;
+    width:10%;
+  }
+  
+  .confrom a {
+    display:block;
+  }
+  
+  .confrom:hover, .confrom:focus {
+    text-decoration: none;
+    color:rgb(202, 237, 169);
+    border:0.05rem rgb(221, 240, 170) solid;
+    background-color: rgb(27, 154, 98);
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+
+  .price{
+    float:right;
+    margin-right:1rem;
+  }
+
+  .form-element {
+    margin: 0.8rem 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .container {
+    display: block;
+    position: relative;
+ 
+    margin-bottom: 1.8rem ;
+    cursor: pointer;
+    font-size: 1.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a yellow background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(177, 192, 134);
+  }
+  
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 0.37rem;
+    left: 0.38rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: white;
+  }
+  /* Style for checkout */
+.form{
+    margin-top:0.5rem;
+    display:inline-block;
+    width: 100%;
+  }
+  .label{
+    padding:0.2rem;
+    display:inline-block;
+    width: 10rem;
+  } 
+
+  /* top image on product */
+  /* http://photographybyemma.ca/wp-content/uploads/2018/09/0006-PBE-Branding-Shoot-Details_PhotosbyEmmaH_WEB.jpg */
+.top-img-product{
+  background:url("../img/topimg.jpg");
+  height:400px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+.norder-box img{
+  width:200px;
+}
+
+#colorImage img{
+  width:200px;
+}
+
+#potionalImage img{
+  width:500px;
+}
+.product-intro{
+  margin-bottom:6rem;
+  font-family: audreyregular, sans-serif;
+}
+.header-big{
+  text-align: center;
+  margin-top:3rem;
+  
+}
+
+.more{
+  display:flex;
+  flex-flow: wrap;
+  margin-top:3rem;
+  align-self:center;
+  justify-content: center;
+  
+}
+
+.more p{
+  text-align:center;
+  max-width:45rem;
+}
+
+footer{
+margin-top: 10%;
+text-align: right;
+}
+
+.finalpayment{
+margin-left: 50%;
+margin-top: 10rem;
+
+}
+
+#options{
+  padding-top: 5%;
+}
+
+/* https://codepen.io/EricPorter/pen/XaOEpP */
+
+.slider, 
+.slider > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 500px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+}
+
+.slider > div {
+    position: absolute;
+}
+
+.slider > i {
+    color: #5bbd72;
+    position: absolute;
+    font-size: 60px;
+    margin: 20px;
+    top: 40%;
+    text-shadow: 0 10px 2px #223422;
+    transition: .3s;
+    width: 30px;
+    padding: 10px 13px;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    line-height: 0;
+    box-sizing: content-box;
+    border-radius: 3px;
+    z-index: 4;
+}
+
+.slider > i svg {
+    margin-top: 3px;
+}
+
+.slider > .left {
+    left: -100px;
+}
+.slider > .right {
+    right: -100px;
+}
+.slider:hover > .left {
+    left: 0;
+}
+.slider:hover > .right {
+    right: 0;
+}
+
+.slider > i:hover {
+    background:#fff;
+    background: rgba(255, 255, 255, .8);
+    transform: translateX(-2px);
+}
+
+.slider > i.right:hover {
+    transform: translateX(2px);
+}
+
+.slider > i.right:active,
+.slider > i.left:active {
+    transform: translateY(1px);
+}
+
+.slider:hover > div {
+    transform: scale(1.01);
+}
+
+.hoverZoomOff:hover > div {
+    transform: scale(1);
+}
+
+
+
+.slider > ul > li {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+
+
+
+.slider > .show {
+    z-index: 1;
+}
+
+
+.showArrows > .left {
+    left: 0;
+}
+
+.showArrows > .right {
+    right: 0;
+}
+
+.titleBar {
+    z-index: 2;
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 20px 30px;
+    transition: .3s;
+    color: #fff;
+}
+
+.titleBar * {
+    transform: translate(-20px, 30px);
+    transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+    opacity: 0;
+}
+
+.titleBarTop .titleBar * {
+    transform: translate(-20px, -30px);
+}
+
+.slider:hover .titleBar,
+.slider:hover .titleBar * {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.titleBarTop .titleBar {
+    top: 0;
+    bottom: initial;
+    transform: translateY(-100%);
+}
+
+.slider > div span {
+    display: block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+
+@keyframes boing {
+    0% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(.6);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
