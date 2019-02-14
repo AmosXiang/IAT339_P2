@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Products</title>
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/mainV2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -54,60 +55,255 @@
                 Flowers can bring people pleasure and a wonderful memory. </p>
         </div>
     </div>
-    <div class="product-list">
-        <div class="box">
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/flower.jpg" alt="sample of Limited Edition"></a>
-                <div class="figurer">
-                    <p>Limited Edition</p>
-                    <div class="price">
-                        <p>$999.99</p>
-                    </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
 
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/rose.jpg" alt="rose flower"></a>
-                <div class="figurer">
-                    <p>Lovers</p>
-                    <div class="price">
-                        <p>$299.99</p>
-                    </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
+    <!-- product list cite: https://codepen.io/mmcshinsky/pen/ogHxi-->
 
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/red.jpg" alt="Red flower"></a>
-                <div class="figurer">
-                    <p>Publica</p>
-                    <div class="price">
-                        <p>$399.99</p>
-                    </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
 
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/glory.jpg" alt="goldn glory"></a>
-                <div class="figurer">
-                    <p>Golden Glory</p>
-                    <div class="price">
-                        <p>$599.99</p>
+    <div class="product_grid">
+        <div class="element">
+            <ul class="product_list list">
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
                     </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
+                    <div class="product_image">
+                        <a href="#"><img src="img/flower.jpg" alt=""></a>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fas fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                            <div class="quick_view">
+                                <a href="#">
+                                    <h6>Quick View</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>flower</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"><span class="price_old">$79.99</span> <span class="price_new">$69.99</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">Sed sodales odio non metus tincidunt consectetur. Integer non lobortis
+                                orci.
+                                In hac habitasse platea dictumst. Suspendisse sit amet condimentum arcu. Curabitur
+                                venenatis
+                                interdum lectus, vitae egestas sem facilisis sit amet. Praesent tortor purus, vulputate
+                                at
+                                ultricies quis, aliquet sed ante.</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_image">
+                        <a href="#"><img src="img/flower.jpg" alt=""></a>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                            <div class="quick_view">
+                                <a href="#">
+                                    <h6>Quick View</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>flower</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"> <span class="price_new">$69.99</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">Sed sodales odio non metus tincidunt consectetur. Integer non lobortis
+                                orci.
+                                In hac habitasse platea dictumst. Suspendisse sit amet condimentum arcu. Curabitur
+                                venenatis
+                                interdum lectus, vitae egestas sem facilisis sit amet. Praesent tortor purus, vulputate
+                                at
+                                ultricies quis, aliquet sed ante.</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
+                    </div>
+                    <div class="product_image">
+                        <a href="#"><img src="img/flower.jpg" alt=""></a>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                            <div class="quick_view">
+                                <a href="#">
+                                    <h6>Quick View</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>flower</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"><span class="price_old">$79.99</span> <span class="price_new">$69.99</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">Sed sodales odio non metus tincidunt consectetur. Integer non lobortis
+                                orci.
+                                In hac habitasse platea dictumst. Suspendisse sit amet condimentum arcu. Curabitur
+                                venenatis
+                                interdum lectus, vitae egestas sem facilisis sit amet. Praesent tortor purus, vulputate
+                                at
+                                ultricies quis, aliquet sed ante.</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_image">
+                        <a href="#"><img src="img/flower.jpg" alt=""></a>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                            <div class="quick_view">
+                                <a href="#">
+                                    <h6>Quick View</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>flower</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"><span class="price_new">$69.99</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">Sed sodales odio non metus tincidunt consectetur. Integer non lobortis
+                                orci.
+                                In hac habitasse platea dictumst. Suspendisse sit amet condimentum arcu. Curabitur
+                                venenatis
+                                interdum lectus, vitae egestas sem facilisis sit amet. Praesent tortor purus, vulputate
+                                at
+                                ultricies quis, aliquet sed ante.</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
+                    </div>
+                    <div class="product_image">
+                        <a href="#"><img src="img/flower.jpg" alt=""></a>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                            <div class="quick_view">
+                                <a href="#">
+                                    <h6>Quick View</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>flower</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"><span class="price_old">$79.99</span> <span class="price_new">$69.99</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">Sed sodales odio non metus tincidunt consectetur. Integer non lobortis
+                                orci.
+                                In hac habitasse platea dictumst. Suspendisse sit amet condimentum arcu. Curabitur
+                                venenatis
+                                interdum lectus, vitae egestas sem facilisis sit amet. Praesent tortor purus, vulputate
+                                at
+                                ultricies quis, aliquet sed ante.</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_image">
+                        <a href="#"><img src="img/flower.jpg" alt=""></a>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                            <div class="quick_view">
+                                <a href="#">
+                                    <h6>Quick View</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>flowers</h5>
+                        </div>
+                        <div class="product_price">
+                            <a href="#"><span class="price_new">$69.99</span></a>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_desc">
+                            <p class="truncate">Sed sodales odio non metus tincidunt consectetur. Integer non lobortis
+                                orci.
+                                In hac habitasse platea dictumst. Suspendisse sit amet condimentum arcu. Curabitur
+                                venenatis
+                                interdum lectus, vitae egestas sem facilisis sit amet. Praesent tortor purus, vulputate
+                                at
+                                ultricies quis, aliquet sed ante.</p>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <button class="product_compare"><i class="fa fa-random"></i></button>
+                            <button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <footer>
 
-    <!-- FOOTER START -->
+    <!-- productlist end -->
     <div class="footer">
         <div class="contain">
             <div class="col">
@@ -136,7 +332,8 @@
 
                 </ul>
             </div>
-            <div class="clearfix"></div>
+            <div class="clearfix">
+            </div>
             <footer class="footerL">
                 <p> © 2019 Spring IAT - 339 P2 Hao Xiang/Celia Xu </p>
             </footer>

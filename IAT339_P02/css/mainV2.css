@@ -459,7 +459,7 @@ html,body {
   .species{
       margin-bottom: 20rem;
   }
-    /* species start end*/
+    /* species  end*/
 
   /* STYLES SPECIFIC TO FOOTER  */
   .footer {
@@ -525,3 +525,16 @@ html,body {
       text-align: right;
       margin-right: 5rem;
   }
+  @media screen and (max-width: 600px) {
+
+    .species .col:nth-child(2) {
+      min-width: 50%;
+    }
+    .species .col:nth-child(4) {
+      min-width: 50%;
+    }
+    .species .col:nth-child(3) + .col:nth-child(3) {
+      min-width: 50%;
+    }
+  }
+    
