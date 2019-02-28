@@ -3,45 +3,53 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cart</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/mainV2.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <!-- this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#myPage">Foloria</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="homeV2.html">Home</a></li>
+  <header>
+      <!-- this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="homeV2.html">Foloria</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
 
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li id="go"><a href="products.html">Festival Collection</a></li>
-                                <li id="go1"><a href="#">Delivery FQA</a></li>
-                                <li id="go2"><a href="#">Share</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="cart.html">Cart</a></li>
-                          <li><a href="about.html">Event</a></li>
-                        <li><a href="index.html">Styly</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
+                      <ul class="nav navbar-nav navbar-right">
+
+                          <li><a href="homeV2.html"><b>Home</b></a></li>
+                          <li><a href="products.html"><b>Product</b></a></li>
+                          <li><a href="cart.html"><b>Cart</b></a></li>
+                          <li><a href="about.html"><b>Event</b></a></li>
+
+                          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+                      </ul>
+
+
+              </div>
+          </div>
+
+
+      </nav>
     </header>
 
     <div class="box">
@@ -52,32 +60,58 @@
         </div>
     </div>
 
+    <!-- this cart is learned from http://thenewcode.com/852/A-Fresh-Approach-to-Responsive-Tables -->
+    <div class="container">
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:50%">Product</th>
+                    <th style="width:10%">Price</th>
+                    <th style="width:8%">Quantity</th>
+                    <th style="width:22%" class="text-center">Subtotal</th>
+                    <th style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="img/Lily.jpg" alt="..." class="img-responsive" />
+                            </div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">Lily</h4>
+                                <p>Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large
+                                    prominent flowers. Lilies are a group of flowering plants which are important in
+                                    culture and literature in much of the world.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">$69.99</td>
 
-    <div class="blockc">
-        <div class="box">
-            <div class="norder-box">
-                <figure class="space"><img class="static1" src="img/red.jpg" alt="red"></figure>
-                <figure>
-                    <h5>Red Flower </h5>
-                </figure>
-                <figure><img class="static1 space" src="img/rose.jpg" alt="rose"></figure>
-                <figure>
-                    <h5>Rose Flower </h5>
-                </figure>
-                <figure>
-                    <h5>Quantity</h5>
-                </figure>
-                <div class="methods form-element"></div>
-                <input type="text" placeholder="2" value="2">
-                <figure>
-                    <h5>Price</h5>
-                    <p>$1299.99</p>
-                </figure>
-                <figure><a class="checkOut" href="pay.html">Chect Out</a></figure>
-                <figure><a class="Cancel" href="#">Cancel</a></figure>
-            </div>
-        </div>
+                    <td data-th="Quantity">
+                        <p>1</p>
+                    </td>
+                    <td data-th="Subtotal" class="text-center">69.99</td>
+                    <td class="actions" data-th="">
 
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="visible-xs">
+                    <td class="text-center"><strong>Total 69.99</strong></td>
+                </tr>
+                <tr>
+                    <td><a href="products.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue
+                            Shopping</a></td>
+                    <td colspan="2" class="hidden-xs"></td>
+                    <td class="hidden-xs text-center"><strong>Total $69.99</strong></td>
+                    <td><a href="pay.html" class="btn btn-success btn-block">Checkout <i
+                                class="fa fa-angle-right"></i></a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 
 
@@ -87,27 +121,22 @@
             <div class="col">
                 <h1>Company</h1>
                 <ul>
-                    <li>About</li>
-                    <li>Products</li>
-                    <li>Payment</li>
-
+                        <li><a href="homeV2.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="pay.html">Payment</a></li>
                 </ul>
             </div>
 
             <div class="col">
                 <h1>Activities</h1>
                 <ul>
-                    <li>Events</li>
-
-
+                        <li><a href="about.html">Events</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h1>Support</h1>
                 <ul>
-                    <li>Contact us</li>
-                    <li>Social media</li>
-
+                        <li><a href="index.html">Style Guide</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>

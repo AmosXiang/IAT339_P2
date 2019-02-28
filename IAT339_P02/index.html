@@ -5,12 +5,18 @@
 
   <meta charset="utf-8">
   <title>Style Guide </title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/mainV2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+
+  <link href="css/event.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,380 +26,927 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#myPage">Foloria</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="homeV2.html">Foloria</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
+
+
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="homeV2.html">Home</a></li>
 
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li id="go"><a href="products.html">Festival Collection</a></li>
-                <li id="go1"><a href="#">Delivery FQA</a></li>
-                <li id="go2"><a href="#">Share</a></li>
-              </ul>
-            </li>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="about.html">Event</a></li>
-            <li><a href="index.html">Style</a></li>
+            <li><a href="homeV2.html"><b>Home</b></a></li>
+            <li><a href="products.html"><b>Product</b></a></li>
+            <li><a href="cart.html"><b>Cart</b></a></li>
+            <li><a href="about.html"><b>Event</b></a></li>
+
             <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
           </ul>
+
+
         </div>
       </div>
+
+
     </nav>
-    <h1><br>P02 - Style Guide</h1>
+  </header>
+
+  <h1><br>P02 - Style Guide</h1>
+
+  <section class="element">
+
+    <h3>Navigation bar</h3>
+
+    <h4>CSS selector:</h4>
+    <p>.navbar<br> .navbar-default <br>.navbar-fixed-top<br>.container-fluid<br>.navbar-header<br>#myNavbarbr<br><br>
+    </p>
+
+    <h4>Sample code:</h4>
+
+    <code>
+          &lt;nav class="navbar navbar-default navbar-fixed-top"&gt;
+        </code>
+    <code>
+          &lt;div class="container-fluid"&gt;
+        </code>
+    <code>
+          &lt;div class="navbar-header"&gt;
+        </code>
+    <code>
+          &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"&gt;
+        </code>
+    <code>
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        </code>
+    <code>
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        </code>
+    <code>
+          &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        </code>
+    <code>
+          &lt;/button&gt;
+        </code>
+    <code>
+          &lt;a class="navbar-brand" href="homeV2.html"&gt;Foloria&lt;/a&gt;
+        </code>
+    <code>
+          &lt;/div&gt;
+        </code>
+    <code>
+          &lt;div class="collapse navbar-collapse" id="myNavbar"&gt;
+        </code>
+    <code>
+          &lt;b&gt;
+        </code>
+    <code>
+          &lt;ul class="nav navbar-nav navbar-right"&gt;
+        </code>
+    <code>
+          &lt;li&gt;&lt;a href="homeV2.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        </code>
+    <code>
+          &lt;li&gt;&lt;a href="products.html"&gt;Product&lt;/a&gt;&lt;/li&gt;
+        </code>
+    <code>
+          &lt;li&gt;&lt;a href="cart.html"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+        </code>
+    <code>
+          &lt;li&gt;&lt;a href="about.html"&gt;Event&lt;/a&gt;&lt;/li&gt;
+        </code>
+    <code>
+          &lt;li&gt;&lt;a href="index.html"&gt;Style&lt;/a&gt;&lt;/li&gt;
+        </code>
+    <code>
+          &lt;li&gt;&lt;a href="#"&gt;&lt;span class="glyphicon glyphicon-search"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        </code>
+    <code>
+          &lt;/ul&gt;
+        </code>
+    <code>
+          &lt;/b&gt;
+        </code>
+    <code>
+
+          &lt;/div&gt;
+        </code>
+    <code>
+          &lt;/div&gt;
+        </code>
+    <code>
+          &lt;/nav&gt;
+
+    </code>
+    <h4>Rendered element: See the top.</h4>
+  </section>
+
+  <section class="element">
+    <h3>Sliding section</h3>
+
+    <h4>CSS selector:</h4>
+    <p>
+      .slider<br>
+      #slider1<br>
+      .left<br>
+      .right<br>
+      .arrows<br>
+      .titleBar<br>
+    </p>
+
+    <h4>Sample code:</h4>
+    <code>
+      &lt;div class="slider" id="slider1"></code>
+    <code>&lt;div style="background-image:url(img/eventFlower1.jpg)">&lt;/div></code>
+    <code>&lt;div style="background-image:url(img/eventFlower2.jpg)">&lt;/div></code>
+    <code>&lt;div style="background-image:url(img/eventFlower3.jpg)">&lt;/div></code>
+    <code>&lt;div style="background-image:url(img/eventFlower4.jpg)">&lt;/div></code>
+    <code>&lt;div style="background-image:url(img/eventFlower5.jpg)">&lt;/div></code>
+    <code>&lt;i class="left" class="arrows" style="z-index:2; position:absolute;">&lt;svg viewBox="0 0 100 100"></code>
+    <code>  &lt;path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z">&lt;/path></code>
+    <code> &lt;/svg>&lt;/i></code>
+    <code> &lt;i class="right" class="arrows" style="z-index:2; position:absolute;">&lt;svg viewBox="0 0 100 100"></code>
+    <code> &lt;path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></code>
+    <code>  &lt;/path></code>
+    <code>  &lt;/svg>&lt;/i></code>
+    <code>  &lt;span class="titleBar"></code>
+    <code>  &lt;h1>Flower Festival - March 27th&lt;/h1></code>
+    <code>  &lt;/span></code>
+    <code>  &lt;/div>
+  </code>
+    <h4>Rendered element: </h4>
+  </section>
+  <!-- https://codepen.io/EricPorter/pen/XaOEpP -->
+  <!-- Slider 1 -->
+  <div class="slider" id="slider1">
+    <!-- Slides -->
+    <!-- https://www.pexels.com/search/beautiful%20flowers/ -->
+    <div style="background-image:url(img/eventFlower1.jpg)"></div>
+    <div style="background-image:url(img/eventFlower2.jpg)"></div>
+    <div style="background-image:url(img/eventFlower3.jpg)"></div>
+    <div style="background-image:url(img/eventFlower4.jpg)"></div>
+    <div style="background-image:url(img/eventFlower5.jpg)"></div>
+    <!-- The Arrows -->
+    <i class="left arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+      </svg></i>
+    <i class="right arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) ">
+        </path>
+      </svg></i>
+    <!-- Title Bar -->
+    <!-- <span class="titleBar"> -->
+    <h1 class="titleBar">Flower Festival - March 27th</h1>
+    <!-- </span> -->
+  </div>
+
+  <section class="element">
+
+    <h3>Best sell section</h3>
+    <h4>CSS selector:</h4>
+    <p>
+      .container<br>.row<br>.item<br>#theCarousel<br>.img-responsive<br>.active<br>
+    </p>
+
+    <h4>Sample code:</h4>
+    <code>
+        &lt;h2 class="hx">Best Sell&lt;/h2></code>
+    <code>  &lt;div class="container"></code>
+    <code>  &lt;div class="row"></code>
+    <code>  &lt;div class="col-md-12"></code>
+    <code>  &lt;div class="carousel slide multi-item-carousel" id="theCarousel"></code>
+    <code>  &lt;div class="carousel-inner"></code>
+    <code>  &lt;div class="item active"></code>
+    <code>  &lt;div class="col-xs-4">&lt;a href="#1">&lt;img src="img/best sell1.jpg"
+                                              class="img-responsive">&lt;/a>&lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="item"></code>
+    <code>  &lt;div class="col-xs-4">&lt;a href="#1">&lt;img src="img/best sell2.jpg"
+                                              class="img-responsive">&lt;/a>&lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="item"></code>
+    <code>  &lt;div class="col-xs-4" id="hhh">&lt;a href="#1">&lt;img src="img/best sell3.jpg"
+                                              class="img-responsive">&lt;/a>&lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="item"></code>
+    <code>  &lt;div class="col-xs-4" id="hhh2">&lt;a href="#1">&lt;img src="img/best sell4.jpg"
+                                              class="img-responsive">&lt;/a>&lt;/div></code>
+    <code>  &lt;/div></code>
+
+    <!--  Example item end -->
+    <code>  &lt;/div></code>
+    <code>  &lt;a class="left carousel-control" href="#theCarousel" data-slide="prev">&lt;i
+                                  class="glyphicon glyphicon-chevron-left">&lt;/i>&lt;/a></code>
+    <code>  &lt;a class="right carousel-control" href="#theCarousel" data-slide="next">&lt;i
+                                  class="glyphicon glyphicon-chevron-right">&lt;/i>&lt;/a></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+
+    <h4>Rendered element: </h4>
+    <div class="bestSell">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-4"><a href="#1"><img src="img/bestsell1.jpg" alt="" class="img-responsive"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="img/bestsell2.jpg" alt="" class="img-responsive"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" id="hhh"><a href="#1"><img src="img/bestsell3.jpg" alt=""
+                        class="img-responsive"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" id="hhh2"><a href="#1"><img src="img/bestsell4.jpg" alt=""
+                        class="img-responsive"></a>
+                  </div>
+                </div>
+
+              </div>
+              <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                  class="glyphicon glyphicon-chevron-left"></i></a>
+              <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                  class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
-    <!-- https://codepen.io/EricPorter/pen/XaOEpP -->
-    <!-- Slider 1 -->
-    <div class="slider" id="slider1">
-        <!-- Slides -->
-        <!-- https://www.pexels.com/search/beautiful%20flowers/ -->
-        <div style="background-image:url(img/eventFlower1.jpg)"></div>
-        <div style="background-image:url(img/eventFlower2.jpg)"></div>
-        <div style="background-image:url(img/eventFlower3.jpg)"></div>
-        <div style="background-image:url(img/eventFlower4.jpg)"></div>
-        <div style="background-image:url(img/eventFlower5.jpg)"></div>
-        <!-- The Arrows -->
-        <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
-                <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
-            </svg></i>
-        <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
-                <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
-            </svg></i>
-        <!-- Title Bar -->
-        <span class="titleBar">
-            <h1>Flower Festival - March 27th</h1>
-        </span>
+  <section class="element">
+    <h3>favorite section</h3>
+
+    <h4>CSS selector:</h4>
+    <p>
+      .species<br>.hx<br>.container<br>.row<br>.col<br>.photo-container<br>.slide<br>
+    </p>
+
+    <h4>Sample code:</h4>
+
+    <code>  &lt;div class="species"></code>
+    <code>  &lt;h1 class="hx">Favorite Species&lt;/h1></code>
+    <code>  &lt;div class="container"></code>
+    <code>  &lt;div class="row"></code>
+    <code>  &lt;div class="col"></code>
+    <code>  &lt;div class="photo-container" style="background-image:url(img/img5.jpg);">&lt;/div></code>
+    <code>  &lt;h2>Lily of the Valley &lt;/h2></code>
+    <code>  &lt;div class="slide"></code>
+    <code>  &lt;p>Lily of the valley, sometimes written lily-of-the-valley, is a sweetly scented, highly
+                poisonous woodland flowering plant that is native throughout the cool temperate
+                Northern Hemisphere in Asia and Europe.&lt;/p></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="col"></code>
+    <code>  &lt;div class="photo-container" style="background-image:url(img/img6.jpg);">&lt;/div></code>
+    <code>  &lt;h2>Bee Balm Flower &lt;/h2></code>
+    <code>  &lt;div class="slide"></code>
+    <code>  &lt;p>Monarda is a genus of flowering plants in the mint family, Lamiaceae. The genus is
+                endemic to North America. Common names include bee balm, horsemint, oswego tea, and
+                bergamot, the latter inspired by the fragrance of the leaves, which is reminiscent of
+                bergamot orange.&lt;/p></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="row"></code>
+    <code>  &lt;div class="col"></code>
+    <code>  &lt;div class="photo-container" style="background-image:url(img/img3.jpg);">&lt;/div></code>
+    <code>  &lt;h2>Lotus&lt;/h2></code>
+    <code>  &lt;div class="slide"></code>
+    <code>  &lt;p>Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean
+                or simply lotus, is one of two extant species of aquatic plant in the family
+                Nelumbonaceae. &lt;/p></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="col"></code>
+    <code>  &lt;div class="photo-container" style="background-image:url(img/img4.jpg);">&lt;/div></code>
+    <code>  &lt;h2>Nymphea&lt;/h2></code>
+    <code>  &lt;div class="slide"></code>
+    <code>  &lt;p>Nymphaea is a genus of hardy and tender aquatic plants in the family Nymphaeaceae. The
+                genus has a cosmopolitan distribution.&lt;/p></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="col"></code>
+    <code>  &lt;div class="photo-container" style="background-image:url(img/img1.jpg);">&lt;/div></code>
+    <code>  &lt;h2>Hyacinth &lt;/h2></code>
+    <code>  &lt;div class="slide"></code>
+    <code>  &lt;p>Hyacinthus is a small genus of bulbous, fragrant flowering plants in the family
+                Asparagaceae, subfamily Scilloideae. These are commonly called hyacinths.&lt;/p></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;div class="col"></code>
+    <code>  &lt;div class="photo-container" style="background-image:url(img/img2.jpg);">&lt;/div></code>
+    <code>  &lt;h2>Rondeletia&lt;/h2></code>
+    <code>  &lt;div class="slide"></code>
+    <code>  &lt;p>Rondeletia is a genus of flowering plants in the family Rubiaceae. It is endemic to the
+                neotropics. &lt;/p></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+    <code>  &lt;/div></code>
+
+
+    <h4>Rendered element: </h4>
+    <div class="species">
+      <h1 class="hx">Favorite Species</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="photo-container" style="background-image:url(img/img5.jpg);"></div>
+            <h2>Lily of the Valley </h2>
+            <div class="slide">
+              <p>Lily of the valley, sometimes written lily-of-the-valley, is a sweetly scented, highly
+                poisonous woodland flowering plant that is native throughout the cool temperate
+                Northern Hemisphere in Asia and Europe.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="photo-container" style="background-image:url(img/img6.jpg);"></div>
+            <h2>Bee Balm Flower </h2>
+            <div class="slide">
+              <p>Monarda is a genus of flowering plants in the mint family, Lamiaceae. The genus is
+                endemic to North America. Common names include bee balm, horsemint, oswego tea, and
+                bergamot, the latter inspired by the fragrance of the leaves, which is reminiscent of
+                bergamot orange.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="photo-container" style="background-image:url(img/img3.jpg);"></div>
+            <h2>Lotus</h2>
+            <div class="slide">
+              <p>Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean
+                or simply lotus, is one of two extant species of aquatic plant in the family
+                Nelumbonaceae. </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="photo-container" style="background-image:url(img/img4.jpg);"></div>
+            <h2>Nymphea</h2>
+            <div class="slide">
+              <p>Nymphaea is a genus of hardy and tender aquatic plants in the family Nymphaeaceae. The
+                genus has a cosmopolitan distribution.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="photo-container" style="background-image:url(img/img1.jpg);"></div>
+            <h2>Hyacinth </h2>
+            <div class="slide">
+              <p>Hyacinthus is a small genus of bulbous, fragrant flowering plants in the family
+                Asparagaceae, subfamily Scilloideae. These are commonly called hyacinths.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="photo-container" style="background-image:url(img/img2.jpg);"></div>
+            <h2>Rondeletia</h2>
+            <div class="slide">
+              <p>Rondeletia is a genus of flowering plants in the family Rubiaceae. It is endemic to the
+                neotropics. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <section class="element">
+
+    <h3>Navigation Link</h3>
+
+    <h4>CSS selector:</h4>
+    <p>.product_item</p>
+    <p>.product_sale</p>
+    <p>.product_image</p>
+    <p>.image</p>
+    <p>.middle</p>
+    <p>.text</p>
+    <p>.truncate</p>
+    <p>.product_buttons</p>
+    <p>.product_heart</p>
+    <p>.add_to_cart</p>
+    <p>.product_values</p>
+    <p>.product_title</p>
+    <p>.product_price</p>
+    <p>.price_old</p>
+    <p>.product_rating</p>
+
+
+    <h4>Sample code:</h4>
+    <code>&lt;li class="product_item"&gt;
+      </code>
+    <code>
+          &lt;div class="product_sale"&gt;
+        </code>
+    <code>
+              &lt;p&gt;On Sale&lt;/p&gt;
+            </code>
+    <code>
+          &lt;/div&gt;
+        </code>
+    <code>
+          &lt;div class="product_image"&gt;
+        </code>
+    <code>
+              &lt;img src="img/Common sunflower.jpg" alt="" class="image"&gt;
+            </code>
+    <code>
+              &lt;div class="middle"&gt;
+            </code>
+    <code>
+                &lt;div class="text"&gt;&lt;p class="truncate"&gt;Helianthus annuus, the common sunflower, is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits.&lt;/p&gt;&lt;/div&gt;
+              </code>
+    <code>
+              &lt;/div&gt;
+            </code>
+    <code>
+              &lt;div class="product_buttons"&gt;
+            </code>
+    <code>
+                  &lt;button class="product_heart"&gt;&lt;i class="fa fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+                </code>
+    <code>
+                  &lt;button class="add_to_cart"&gt;&lt;a href="cart.html"&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/button&gt;
+                </code>
+    <code>
+              &lt;/div&gt;
+            </code>
+    <code>
+          &lt;/div&gt;
+        </code>
+    <code>
+          &lt;div class="product_values"&gt;
+        </code>
+    <code>
+              &lt;div class="product_title"&gt;
+            </code>
+    <code>
+                  &lt;h5&gt;Helianthus annuus&lt;/h5&gt;
+                </code>
+    <code>
+              &lt;/div&gt;
+            </code>
+    <code>
+              &lt;div class="product_price"&gt;
+            </code>
+    <code>
+                  &lt;span class="price_old"&gt;$79.99&lt;/span&gt; &lt;span class="price_new"&gt;$69.99&lt;/span&gt;
+                </code>
+    <code>
+                  &lt;span class="product_rating"&gt;&lt;/span&gt;
+                </code>
+    <code>
+              &lt;/div&gt;
+            </code>
+    <code>
+              &lt;div class="product_buttons"&gt;
+            </code>
+    <code>
+                  &lt;button class="product_heart"&gt;&lt;i class="fa fa-heart"&gt;&lt;/i&gt;&lt;/button&gt;
+                </code>
+    <code>
+                  &lt;button class="add_to_cart"&gt;&lt;a href="cart.html"&gt;&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/button&gt;
+                </code>
+    <code>
+              &lt;/div&gt;
+            </code>
+    <code>
+          &lt;/div&gt;
+        </code>
+    <code>
+      &lt;/li&gt;
+    </code>
+
+
+    <h4>Rendered element:</h4>
+    <ul>
+      <li class="product_item">
+        <div class="product_sale">
+          <p>On Sale</p>
+        </div>
+        <div class="product_image">
+          <img src="img/Commonsunflower.jpg" alt="" class="image">
+          <div class="middle">
+            <div class="text">
+              <p class="truncate">Helianthus annuus, the common sunflower, is a large annual forb of the genus
+                Helianthus
+                grown as a crop for its edible oil and edible fruits.</p>
+            </div>
+          </div>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="add_to_cart" onclick="window.location.href='cart.html'"><i
+                class="fa fa-shopping-cart"></i></button>
+
+          </div>
+        </div>
+        <div class="product_values">
+          <div class="product_title">
+            <h5>Helianthus annuus</h5>
+          </div>
+          <div class="product_price">
+            <span class="price_old">$79.99</span> <span class="price_new">$69.99</span>
+            <span class="product_rating"></span>
+          </div>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="add_to_cart" onclick="window.location.href='cart.html'"><i
+                class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h4>CSS selector:</h4>
+    <p>.container</p>
+    <p>.row</p>
+    <p>.carousel</p>
+    <p>.carousel-inner</p>
+    <p>.carousel-item</p>
+    <p>.active</p>
+    <p>.slide</p>
+    <p>.event-container</p>
+    <p>.event-header</p>
+    <p>.event-item</p>
+    <p>.col-md-2</p>
+    <p>.event-date</p>
+    <p>.col-md-10</p>
+    <p>.event-desc</p>
+
+
+    <h4>Sample code:</h4>
+    <code>&lt;div class="container"&gt;</code>
+    <code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="carousel slide" data-ride="carousel" id="event-carousel" data-interval="false"&gt;</code>
+    <code>&lt;div class="carousel-inner"&gt;</code>
+    <code>&lt;div class="carousel-item active"&gt;</code>
+    <code>&lt;div class="event-container"&gt;</code>
+    <code>&lt;div class="event-header"&gt;</code>
+    <code>&lt;h1&gt;Match&lt;/h1&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="container event-item"&gt;</code>
+    <code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="col-md-2 event-date"&gt;</code>
+    <code>&lt;h1&gt;27&lt;/h1&gt;</code>
+    <code>&lt;span&gt;Tuesday&lt;/span&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="col-md-10 event-desc"&gt;</code>
+    <code>&lt;h2>Flower Festival&lt;/h2&gt;</code>
+    <code>&lt;p&gt;In the spring of 2019, we will hold our annual flower show at Stanley Park. More than 50
+                          flower suppliers attended the event this year. We will provide free snacks, all are welcome to
+                          enjoy the flowers and buy flowers together if you want to buy tickets or join the exhibition,
+                          please contact the staff below registration. We look forward to your participation.&lt;/p&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+
+
+    <h4>Rendered element:</h4>
+    <div class="container">
+      <div class="row">
+        <div class="carousel slide" data-ride="carousel" id="event-carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="event-container">
+                <div class="event-header">
+                  <h1>Match</h1>
+                </div>
+                <div class="container event-item">
+                  <div class="row">
+                    <div class="col-md-2 event-date">
+                      <h1>27</h1>
+                      <span>Tuesday</span>
+                    </div>
+                    <div class="col-md-10 event-desc">
+                      <h2>Flower Festival</h2>
+                      <p>In the spring of 2019, we will hold our annual flower show at Stanley Park. More than 50
+                        flower suppliers attended the event this year. We will provide free snacks, all are welcome to
+                        enjoy the flowers and buy flowers together if you want to buy tickets or join the exhibition,
+                        please contact the staff below registration. We look forward to your participation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
+    <h4>CSS selector:</h4>
+    <p>.container</p>
+    <p>.table</p>
+    <p>.table-hover</p>
+    <p>.table-condensed</p>
+    <p>.text-center</p>
+    <p>.row</p>
+    <p>.col-sm-2</p>
+    <p>.hidden-xs</p>
+    <p>.img-responsive</p>
+    <p>.col-sm-10</p>
+    <p>.nomargin</p>
+    <p>.actions</p>
+    <p>.visible-xs</p>
+    <p>.btn</p>
+    <p>.btn-warning</p>
+    <p>.btn-success</p>
+    <p>.btn-block</p>
 
-    <section class="element">
-      <h3 id="flowers">Product/Service Listing</h3>
 
-      <!-- https://www.rapidtables.com/web/html/link/html-image-link.html -->
-      <div class="product-list">
-        <div class="box">
-          <div class="divFont">
-            <a class="image-Link" href="#"><img class="click-img" src="img/flower.jpg" alt="sample of Limited Edition"></a>
-            <div class="figurer">
-              <p>Limited Edition</p>
-              <div class="price">
-                <p>$999.99</p>
+    <h4>Sample code:</h4>
+    <code>&lt;div class="container"&gt;</code>
+    <code>&lt;table id="cart" class="table table-hover table-condensed"&gt;</code>
+    <code>&lt;thead&gt;</code>
+    <code>&lt;tr&gt;</code>
+    <code>&lt;th style="width:50%"&gt;Product&lt;/th&gt;</code>
+    <code>&lt;th style="width:10%"&gt;Price&lt;/th&gt;</code>
+    <code>&lt;th style="width:8%"&gt;Quantity&lt;/th&gt;</code>
+    <code>&lt;th style="width:22%" class="text-center"&gt;Subtotal&lt;/th&gt;</code>
+    <code>&lt;th style="width:10%"&gt;&lt;/th&gt;</code>
+    <code>&lt;/tr&gt;</code>
+    <code>&lt;/thead&gt;</code>
+    <code>&lt;tbody&gt;</code>
+    <code>&lt;tr&gt;</code>
+    <code>&lt;td data-th="Product"&gt;</code>
+    <code>&lt;div class="row"&gt;</code>
+    <code>&lt;div class="col-sm-2 hidden-xs"&gt;&lt;img src="img/Lily.jpg" alt="..." class="img-responsive" /&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;div class="col-sm-10"&gt;</code>
+    <code>&lt;h4 class="nomargin"&gt;Lily&lt;/h4&gt;</code>
+    <code>&lt;p&gt;Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large
+                                        prominent flowers. Lilies are a group of flowering plants which are important in
+                                        culture and literature in much of the world.&lt;/p&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;/div&gt;</code>
+    <code>&lt;/td&gt;</code>
+    <code>&lt;td data-th="Price"&gt;$69.99&lt;/td&gt;</code>
+
+    <code>&lt;td data-th="Quantity"&gt;</code>
+    <code>&lt;p&gt;1&lt;/p&gt;</code>
+    <code>&lt;/td&gt;</code>
+    <code>&lt;td data-th="Subtotal" class="text-center"&gt;69.99&lt;/td&gt;</code>
+    <code>&lt;td class="actions" data-th=""&gt;</code>
+
+    <code>&lt;/td&gt;</code>
+    <code>&lt;/tr&gt;</code>
+    <code>&lt;/tbody&gt;</code>
+    <code>&lt;tfoot&gt;</code>
+    <code>&lt;tr class="visible-xs"&gt;</code>
+    <code>&lt;td class="text-center"&gt;&lt;strong&gt;Total 69.99&lt;/strong&gt;&lt;/td&gt;</code>
+    <code>&lt;/tr&gt;</code>
+    <code>&lt;tr&gt;</code>
+    <code>&lt;td&gt;&lt;a href="products.html" class="btn btn-warning"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt; Continue Shopping&lt;/a&gt;&lt;/td&gt;</code>
+    <code>&lt;td colspan="2" class="hidden-xs"&gt;&lt;/td&gt;</code>
+    <code>&lt;td class="hidden-xs text-center"&gt;&lt;strong&gt;Total $69.99&lt;/strong&gt;&lt;/td&gt;</code>
+    <code>&lt;td>&lt;a href="pay.html" class="btn btn-success btn-block"&gt;Checkout &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;</code>
+    <code>&lt;/td&gt;</code>
+    <code>&lt;/tr&gt;</code>
+    <code>&lt;/tfoot&gt;</code>
+    <code>&lt;/table&gt;</code>
+    <code>&lt;/div&gt;</code>
+
+
+    <h4>Rendered element:</h4>
+    <div class="container">
+      <table id="cart" class="table table-hover table-condensed">
+        <thead>
+          <tr>
+            <th style="width:50%">Product</th>
+            <th style="width:10%">Price</th>
+            <th style="width:8%">Quantity</th>
+            <th style="width:22%" class="text-center">Subtotal</th>
+            <th style="width:10%"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-th="Product">
+              <div class="row">
+                <div class="col-sm-2 hidden-xs"><img src="img/Lily.jpg" alt="..." class="img-responsive" />
+                </div>
+                <div class="col-sm-10">
+                  <h4 class="nomargin">Lily</h4>
+                  <p>Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large
+                    prominent flowers. Lilies are a group of flowering plants which are important in
+                    culture and literature in much of the world.</p>
+                </div>
               </div>
-            </div>
-            <a class="intext-link" href="#">See Full Details</a>
-            <a class="cart" href="#">Add to cart</a>
-          </div>
+            </td>
+            <td data-th="Price">$69.99</td>
 
-          <div class="divFont">
-            <a class="image-Link" href="#"><img class="click-img" src="img/rose.jpg" alt="rose flower"></a>
-            <div class="figurer">
-              <p>Lovers</p>
-              <div class="price">
-                <p>$299.99</p>
-              </div>
-            </div>
-            <a class="intext-link" href="#">See Full Details</a>
-            <a class="cart" href="#">Add to cart</a>
-          </div>
+            <td data-th="Quantity">
+              <p>1</p>
+            </td>
+            <td data-th="Subtotal" class="text-center">69.99</td>
+            <td class="actions" data-th="">
 
-          <div class="divFont">
-            <a class="image-Link" href="#"><img class="click-img" src="img/red.jpg" alt="Red flower"></a>
-            <div class="figurer">
-              <p>Publica</p>
-              <div class="price">
-                <p>$399.99</p>
-              </div>
-            </div>
-            <a class="intext-link" href="#">See Full Details</a>
-            <a class="cart" href="#">Add to cart</a>
-          </div>
-
-          <div class="divFont">
-            <a class="image-Link" href="#"><img class="click-img" src="img/glory.jpg" alt="goldn glory"></a>
-            <div class="figurer">
-              <p>Golden Glory</p>
-              <div class="price">
-                <p>$599.99</p>
-              </div>
-            </div>
-            <a class="intext-link" href="#">See Full Details</a>
-            <a class="cart" href="#">Add to cart</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- productlist-vision2 -->
-    <section class="element">
-      <ul class="wrapper cf">
-        <li class="product fl-l">
-          <div class="container-prod">
-            <div class="image" style="background-image:url('http://www.behoodclothing.com/wp-content/uploads/2012/07/Splatter.jpg');"></div>
-            <div class="container-information">
-              <div class="title">
-                Splatter hoodie
-                <a href="javascript:void(0)" class="more close"><i class="fa fa-times"></i></a>
-              </div>
-              <div class="description">Siebdruck print<br>100% cotton<br>Color available: white on gray<br>Size
-                available: L, XL</div>
-            </div>
-            <div class="sharing cf">
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/mattiabericchia/pen/myQNEV"
-                class="fl-l" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/home?status=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks%20%40mattiabericchia%20https://codepen.io/mattiabericchia/pen/myQNEV"
-                class="fl-l" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a href="https://plus.google.com/share?url=https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l"
-                target="_blank"><i class="fa fa-google-plus"></i></a>
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://codepen.io/mattiabericchia/pen/myQNEV&title=UI%20Product%20list&summary=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks&source=https://www.linkedin.com/in/mattiabericchia"
-                class="fl-l" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="buttons cf">
-              <a href="javascript:void(0)" class="cart fl-l">
-                <span>
-                  <span class="add">Add to cart <i class="fa fa-shopping-cart"></i></span>
-                  <span class="check"><i class="fa fa-check"></i></span>
-                </span>
-              </a>
-              <a href="javascript:void(0)" class="more fl-l"><span><span><i class="fa fa-plus"></i></span></span></a>
-              <a href="javascript:void(0)" class="share fl-l"><span><span><i class="fa fa-share-alt"></span></i></span></a>
-            </div>
-          </div>
-        </li>
-        <li class="product fl-l">
-          <div class="container-prod">
-            <div class="image" style="background-image:url('http://www.behoodclothing.com/wp-content/uploads/2012/07/Indian.jpg');"></div>
-            <div class="container-information">
-              <div class="title">Indian hoodie</div>
-              <div class="description">Siebdruck print<br>100% cotton<br>Color available: white on black<br>Size
-                available: L, XL, XXL</div>
-            </div>
-            <div class="sharing cf">
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/mattiabericchia/pen/myQNEV"
-                class="fl-l" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/home?status=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks%20%40mattiabericchia%20https://codepen.io/mattiabericchia/pen/myQNEV"
-                class="fl-l" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a href="https://plus.google.com/share?url=https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l"
-                target="_blank"><i class="fa fa-google-plus"></i></a>
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://codepen.io/mattiabericchia/pen/myQNEV&title=UI%20Product%20list&summary=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks&source=https://www.linkedin.com/in/mattiabericchia"
-                class="fl-l" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="buttons cf">
-              <a href="javascript:void(0)" class="cart fl-l">
-                <span>
-                  <span class="add">Add to cart <i class="fa fa-shopping-cart"></i></span>
-                  <span class="check"><i class="fa fa-check"></i></span>
-                </span>
-              </a>
-              <a href="javascript:void(0)" class="more fl-l"><span><span><i class="fa fa-plus"></i></span></span></a>
-              <a href="javascript:void(0)" class="share fl-l"><span><span><i class="fa fa-share-alt"></span></i></span></a>
-            </div>
-          </div>
-        </li>
-        <li class="product fl-l">
-          <div class="container-prod">
-            <div class="image" style="background-image:url('http://www.behoodclothing.com/wp-content/uploads/2012/07/Face.jpg');"></div>
-            <div class="container-information">
-              <div class="title">Face hoodie</div>
-              <div class="description">Siebdruck print<br>100% cotton<br>Color available: black on gray<br>Size
-                available: XL, XXL</div>
-            </div>
-            <div class="sharing cf">
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/mattiabericchia/pen/myQNEV"
-                class="fl-l" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/home?status=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks%20%40mattiabericchia%20https://codepen.io/mattiabericchia/pen/myQNEV"
-                class="fl-l" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a href="https://plus.google.com/share?url=https://codepen.io/mattiabericchia/pen/myQNEV" class="fl-l"
-                target="_blank"><i class="fa fa-google-plus"></i></a>
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://codepen.io/mattiabericchia/pen/myQNEV&title=UI%20Product%20list&summary=Example%20of%20UI%20for%20a%20product%20list%20made%20with%20jQuery%20and%20css%20tricks&source=https://www.linkedin.com/in/mattiabericchia"
-                class="fl-l" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="buttons cf">
-              <a href="javascript:void(0)" class="cart fl-l">
-                <span>
-                  <span class="add">Add to cart <i class="fa fa-shopping-cart"></i></span>
-                  <span class="check"><i class="fa fa-check"></i></span>
-                </span>
-              </a>
-              <a href="javascript:void(0)" class="more fl-l"><span><span><i class="fa fa-plus"></i></span></span></a>
-              <a href="javascript:void(0)" class="share fl-l"><span><span><i class="fa fa-share-alt"></span></i></span></a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="element">
-      <h3>Payment Form</h3>
-
-      <h4>Payment Options</h4>
-
-      <div>
-        <label class="container"> Credit Card
-          <input type="radio" checked="checked" name="radio" value="credit">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container"> Visa
-          <input type="radio" name="radio" value="visa">
-          <span class="checkmark"></span>
-        </label>
-      </div>
-
-
-      <div class="form">
-        <div class="methods form-element">
-          <label for="form-holder">Cardholder Name </label>
-          <input type="text" id="form-holder" placeholder="hao xiang">
-        </div>
-
-        <div class="methods form-element">
-          <label for="form-card">Card Number </label>
-          <input type="text" id="form-card" placeholder="1111-1111-1111-1111">
-        </div>
-
-        <div class="methods form-element">
-          <div class="methods form-element col">
-            <label for="form-exp">Expiry Month </label>
-            <input type="text" id="form-exp" placeholder="Jan">
-          </div>
-          <div class="methods form-element col">
-            <label for="form-expd">Year </label>
-            <input type="text" id="form-expd" placeholder="2020">
-          </div>
-          <div class="methods form-element col">
-            <label for="form-sec">CVV </label>
-            <input type="text" id="form-sec" placeholder="123">
-          </div>
-        </div>
-        <figure><a class="confrom" href="#">Submit</a></figure>
-        <figure><a class="confrom" href="#">Remove</a></figure>
-      </div>
-    </section>
-
-
-    <section class="element">
-      <h3>Checkout Cart</h3>
-
-      <div class="blockc">
-        <div class="box">
-          <div class="norder-box">
-            <figure><img class="static1" src="img/red.jpg" alt="red"></figure>
-            <figure>
-              <h5>Red Flower </h5>
-            </figure>
-            <figure><img class="static1" src="img/rose.jpg" alt="rose"></figure>
-            <figure>
-              <h5>Rose Flower </h5>
-            </figure>
-            <figure>
-              <h5>Quantity</h5>
-            </figure>
-            <div class="methods form-element"></div>
-            <input type="text" placeholder="2" value="2">
-            <figure>
-              <h5>Price</h5>
-              <p>$1299.99</p>
-            </figure>
-            <figure><a class="checkOut" href="#">Chect Out</a></figure>
-            <figure><a class="checkOut" href="#">Cancel</a></figure>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-    <section id="written">
-
-      <h2>Content</h2>
-      <section class="brandings">
-        <h3>branding definition</h3>
-        <p>The company is a online shopping company that sells varieties of flowers.
-          By focusing on selling follower, company aims to provide broader range of choices for consumers to choose.
-          Depending on the season and the holiday season, we update and replace our existing stock every week to make
-          sure the flowers are fresh.
-          The potential customers of the company various. It can be couples who want to have a romantic day,or for
-          families visiting relatives or friends, or for social celebrations.
-          But mainly,we focus on selling on any festavies.
-        </p>
-      </section>
-      <h3>Branding Component</h3>
-      <h4 class=element> <br> Font: Audery </h4>
-      <div id="colorImage">
-        <figure><img src="img/color.jpg" alt="color"></figure>
-      </div>
-      <h4>Potential imagery</h4>
-      <div id="potionalImage">
-        <figure><img src="img/Potential_imagery.jpg" alt="potentialImage"></figure>
-        <figure><img src="img/paypage.jpg" alt="paypage"></figure>
-      </div>
-    </section>
-
-
-
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li><strong>audreyregular[Font]</strong>. Retrieved from <a href="https://befonts.com/audrey-font.html">https://befonts.com/audrey-font.html</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#https://www.99nurseryflorist.com/bouquet/telefloras-shimmering-white-bouquet/p_ef_t407-1a">URL</a>.</li>
-        <li>navBar Source <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h">URL.</a>
-        </li>
-        <li>Button Tutorial <a href="https://www.w3schools.com/tags/tag_label.asp">URL</a>.</li>
-        <li>InputTextField tutorial <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/text">URL</a>.</li>
-        <li>Image Link Tutorial <a href="https://www.rapidtables.com/web/html/link/html-image-link.html ">URL</a>.</li>
-        <li>Text Resource <a href="https://www.lipsum.com/feed/html">URL</a>.</li>
-        <li>List Tutorial <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_intro">URL</a>.</li>
-        <li>Image of flowers <a href="https://www.rapidtables.com/web/html/link/html-image-link.html ">URL</a>.</li>
-        <li>Image of flowers Resources<a href="https://bloomex.ca/florist/Vancouver/?gclid=EAIaIQobChMIhcCYh5CH4AIVOCCtBh1Q7gTXEAAYBCAAEgILUPD_BwE">URL</a>.</li>
-        <li>Image of products background <a href="http://photographybyemma.ca/wp-content/uploads/2018/09/0006-PBE-Branding-Shoot-Details_PhotosbyEmmaH_WEB.jpg">URL</a>.</li>
-
-      </ul>
-
-    </section>
-    <!-- FOOTER START -->
-    <div class="footer">
-        <div class="contain">
-            <div class="col">
-                <h1>Company</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Products</li>
-                    <li>Payment</li>
-
-                </ul>
-            </div>
-
-            <div class="col">
-                <h1>Activities</h1>
-                <ul>
-                    <li>Events</li>
-
-
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Support</h1>
-                <ul>
-                    <li>Contact us</li>
-                    <li>Social media</li>
-
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-            <footer class="footerL">
-                <p> © 2019 Spring IAT - 339 P2 Hao Xiang/Celia Xu </p>
-            </footer>
-        </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="visible-xs">
+            <td class="text-center"><strong>Total 69.99</strong></td>
+          </tr>
+          <tr>
+            <td><a href="products.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue
+                Shopping</a></td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center"><strong>Total $69.99</strong></td>
+            <td><a href="pay.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
-    <script src="js/scrpit.js"></script>
+  </section>
 
-    <script src="../IAT339_P02/js/scrpit.js"></script>
+
+  <section class="element">
+    <h3>Pay section</h3>
+
+    <h4>CSS selector:</h4>
+    <p>
+        .form-group<br>#owner<br>#cvv<br>#cardNumber<br>#expiration-date<br>#credit_cards<br>#pay-now<br>
+    </p>
+
+    <h4>Sample code:</h4>
+    <code>&lt;div class="creditCardForm"></code>
+    <code>&lt;div class="payment"></code>
+    <code>&lt;form></code>
+    <code>&lt;div class="form-group owner"></code>
+    <code>&lt;label for="owner">Owner&lt;/label></code>
+    <code>&lt;input type="text" class="form-control" id="owner"></code>
+    <code>&lt;/div></code>
+    <code>&lt;div class="form-group CVV"></code>
+    <code>&lt;label for="cvv">CVV&lt;/label></code>
+    <code>&lt;input type="text" class="form-control" id="cvv"></code>
+    <code>&lt;/div></code>
+    <code>&lt;div class="form-group" id="card-number-field"></code>
+    <code>&lt;label for="cardNumber">Card Number&lt;/label></code>
+    <code>&lt;input type="text" class="form-control" id="cardNumber"></code>
+    <code>&lt;/div></code>
+    <code>&lt;div class="form-group" id="expiration-date"></code>
+    <code>&lt;label>Expiration Date&lt;/label></code>
+    <code>&lt;select></code>
+    <code>&lt;option value="01">January&lt;/option></code>
+
+    <code>&lt;/select></code>
+    <code>&lt;select></code>
+    <code>&lt;option value="21"> 2021&lt;/option></code>
+    <code>&lt;/select></code>
+    <code>&lt;/div></code>
+
+    <code>&lt;div class="form-group" id="pay-now"></code>
+    <code>&lt;button type="submit" class="btn btn-default" id="confirm-purchase" onclick="myFunction()">Confirm&lt;/button></code>
+
+    <code>&lt;/div></code>
+    <code>&lt;/form></code>
+    <code>&lt;/div></code>
+    <code>&lt;/div></code>
+
+    <h4>Rendered element:</h4>
+    <div class="creditCardForm">
+
+      <div class="payment">
+        <form>
+          <div class="form-group owner">
+            <label for="owner">Owner</label>
+            <input type="text" class="form-control" id="owner">
+          </div>
+          <div class="form-group CVV">
+            <label for="cvv">CVV</label>
+            <input type="text" class="form-control" id="cvv">
+          </div>
+          <div class="form-group" id="card-number-field">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber">
+          </div>
+          <div class="form-group" id="expiration-date">
+            <label>Expiration Date</label>
+            <select>
+              <option value="01">January</option>
+            </select>
+            <select>
+              <option value="21"> 2021</option>
+            </select>
+          </div>
+          <div class="form-group" id="credit_cards">
+            <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/visa.jpg"
+              alt="" id="visa">
+            <img
+              src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/mastercard.jpg"
+              alt="" id="mastercard">
+            <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/amex.jpg"
+              alt="" id="amex">
+          </div>
+          <div class="form-group" id="pay-now">
+            <button type="submit" class="btn btn-default" id="confirm-purchase" onclick="myFunction()">Confirm</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li><strong>audreyregular[Font]</strong>. Retrieved from <a
+          href="https://befonts.com/audrey-font.html">https://befonts.com/audrey-font.html</a></li>
+      <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a
+          href="#https://www.99nurseryflorist.com/bouquet/telefloras-shimmering-white-bouquet/p_ef_t407-1a">URL</a>.
+      </li>
+      <li>Button Tutorial <a href="https://www.w3schools.com/tags/tag_label.asp">URL</a>.</li>
+      <li>InputTextField tutorial <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/text">URL</a>.
+      </li>
+      <li>Image Link Tutorial <a href="https://www.rapidtables.com/web/html/link/html-image-link.html ">URL</a>.</li>
+      <li>Text Resource <a href="https://www.lipsum.com/feed/html">URL</a>.</li>
+      <li>List Tutorial <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_intro">URL</a>.</li>
+      <li>Image of flowers <a href="https://www.rapidtables.com/web/html/link/html-image-link.html ">URL</a>.</li>
+      <li>Image of flowers Resources<a
+          href="https://bloomex.ca/florist/Vancouver/?gclid=EAIaIQobChMIhcCYh5CH4AIVOCCtBh1Q7gTXEAAYBCAAEgILUPD_BwE">URL</a>.
+      </li>
+      <li>Image of products background <a
+          href="http://photographybyemma.ca/wp-content/uploads/2018/09/0006-PBE-Branding-Shoot-Details_PhotosbyEmmaH_WEB.jpg">URL</a>.
+      </li>
+
+      <li>Nav bar<a
+          href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h">URL</a>.
+      </li>
+      <li>slider<a href="https://codepen.io/EricPorter/pen/XaOEpP">URL</a>.
+      </li>
+      <li>favorite species <a href="https://codepen.io/giana/pen/YZWjQy">URL</a>.
+      </li>
+      <li>cart table <a
+          href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h">URL</a>.
+      </li>
+      <li>event<a href="https://codepen.io/rebeccaeilering/pen/RgyLor">URL</a>.
+      </li>
+      <li>list<a href="https://codepen.io/mmcshinsky/pen/ogHxi">URL</a>.
+      </li>
+      <li>pay<a href="https://codepen.io/CraigMac1000/pen/QGyyVO?editors=1100">URL</a>.
+      </li>
+
+    </ul>
+
+  </section>
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+      <div class="col">
+        <h1>Company</h1>
+        <ul>
+          <li><a href="homeV2.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pay.html">Payment</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1>Activities</h1>
+        <ul>
+          <li><a href="about.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Support</h1>
+        <ul>
+          <li><a href="index.html">Style Guide</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+      <footer class="footerL">
+        <p> © 2019 Spring IAT - 339 P2 Hao Xiang/Celia Xu </p>
+      </footer>
+    </div>
+  </div>
+  <script src="js/scrpit.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script src="../IAT339_P02/js/scrpit.js"></script>
 </body>
 
 </html>
