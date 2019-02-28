@@ -26,3 +26,9 @@ $(document).ready(function(){
     } // End if
   });
 })
+
+function myFunction() {
+  alert("Payment Successful!");
+}
+
+<input type="button" onclick="location.href='cart.html';" value="Go to Cart" />

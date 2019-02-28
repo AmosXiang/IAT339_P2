@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cart</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/mainV2.css" rel="stylesheet">
@@ -17,31 +18,38 @@
 
 <body>
 
-    <header>
-        <!-- this nav bar is learned from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
+  <header>
+      <!-- this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                    <a class="navbar-brand" href="homeV2.html">Foloria</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                  <b>  <ul class="nav navbar-nav navbar-right">
-                        <li><a href="homeV2.html">Home</a></li>
-                        <li><a href="products.html">Product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="about.html">Event</a></li>
-                        <li><a href="index.html">Style</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul></b>
-                </div>
-            </div>
-        </nav>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="homeV2.html">Foloria</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
 
+
+                      <ul class="nav navbar-nav navbar-right">
+
+                          <li><a href="homeV2.html"><b>Home</b></a></li>
+                          <li><a href="products.html"><b>Product</b></a></li>
+                          <li><a href="cart.html"><b>Cart</b></a></li>
+                          <li><a href="about.html"><b>Event</b></a></li>
+
+                          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+                      </ul>
+
+
+              </div>
+          </div>
+
+
+      </nav>
     </header>
 
     <div class="box">
@@ -52,7 +60,7 @@
         </div>
     </div>
 
-<!-- this cart is learned from http://thenewcode.com/852/A-Fresh-Approach-to-Responsive-Tables -->
+    <!-- this cart is learned from http://thenewcode.com/852/A-Fresh-Approach-to-Responsive-Tables -->
     <div class="container">
         <table id="cart" class="table table-hover table-condensed">
             <thead>
@@ -79,25 +87,27 @@
                         </div>
                     </td>
                     <td data-th="Price">$69.99</td>
+
                     <td data-th="Quantity">
-                        <p class="form-control">1</p>
+                        <p>1</p>
                     </td>
                     <td data-th="Subtotal" class="text-center">69.99</td>
                     <td class="actions" data-th="">
-                        <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
-                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+
                     </td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr class="visible-xs">
-                    <td class="text-center"><strong>Total 1.99</strong></td>
+                    <td class="text-center"><strong>Total 69.99</strong></td>
                 </tr>
                 <tr>
-                    <td><a href="products.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                    <td><a href="products.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue
+                            Shopping</a></td>
                     <td colspan="2" class="hidden-xs"></td>
                     <td class="hidden-xs text-center"><strong>Total $69.99</strong></td>
-                    <td><a href="pay.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a>
+                    <td><a href="pay.html" class="btn btn-success btn-block">Checkout <i
+                                class="fa fa-angle-right"></i></a>
                     </td>
                 </tr>
             </tfoot>
@@ -111,27 +121,22 @@
             <div class="col">
                 <h1>Company</h1>
                 <ul>
-                    <li>About</li>
-                    <li>Products</li>
-                    <li>Payment</li>
-
+                        <li><a href="homeV2.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="pay.html">Payment</a></li>
                 </ul>
             </div>
 
             <div class="col">
                 <h1>Activities</h1>
                 <ul>
-                    <li>Events</li>
-
-
+                        <li><a href="about.html">Events</a></li>
                 </ul>
             </div>
             <div class="col">
                 <h1>Support</h1>
                 <ul>
-                    <li>Contact us</li>
-                    <li>Social media</li>
-
+                        <li><a href="index.html">Style Guide</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>

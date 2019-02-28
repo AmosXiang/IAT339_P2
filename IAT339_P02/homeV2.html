@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <title>Home </title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/mainV2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,59 +20,63 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="homeV2.html">Foloria</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
 
-                  <b>  <ul class="nav navbar-nav navbar-right">
-                        <li><a href="homeV2.html">Home</a></li>
-                        <li><a href="products.html">Product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="about.html">Event</a></li>
-                        <li><a href="index.html">Style</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul></b>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="homeV2.html"><b>Home</b></a></li>
+                            <li><a href="products.html"><b>Product</b></a></li>
+                            <li><a href="cart.html"><b>Cart</b></a></li>
+                            <li><a href="about.html"><b>Event</b></a></li>
+
+                            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+                        </ul>
+
 
                 </div>
             </div>
 
 
         </nav>
-
-  <!-- https://www.pexels.com/search/beautiful%20flowers/ -->
-
+      </header>
 
 
-        <!-- https://codepen.io/EricPorter/pen/XaOEpP -->
-        <!-- Slider 1 -->
-        <div class="slider" id="slider1">
-            <!-- Slides -->
-          
-            <div style="background-image:url(img/eventFlower1.jpg)"></div>
-            <div style="background-image:url(img/eventFlower2.jpg)"></div>
-            <div style="background-image:url(img/eventFlower3.jpg)"></div>
-            <div style="background-image:url(img/eventFlower4.jpg)"></div>
-            <div style="background-image:url(img/eventFlower5.jpg)"></div>
-            <!-- The Arrows -->
-            <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
-                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
-                </svg></i>
-            <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
-                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
-                        transform="translate(100, 100) rotate(180) "></path>
-                </svg></i>
-            <!-- Title Bar -->
-            <span class="titleBar">
-                <h1>Flower Festival - March 27th</h1>
-            </span>
-        </div>
+
+
+      <!-- https://codepen.io/EricPorter/pen/XaOEpP -->
+      <!-- Slider 1 -->
+      <div class="slider" id="slider1">
+        <!-- Slides -->
+        <!-- https://www.pexels.com/search/beautiful%20flowers/ -->
+        <div style="background-image:url(img/eventFlower1.jpg)"><a href="about.html"></a></div>
+        <div style="background-image:url(img/eventFlower2.jpg)"><a href="about.html"></a></div>
+        <div style="background-image:url(img/eventFlower3.jpg)"><a href="about.html"></a></div>
+        <div style="background-image:url(img/eventFlower4.jpg)"><a href="about.html"></a></div>
+        <div style="background-image:url(img/eventFlower5.jpg)"><a href="about.html"></a></div>
+        <!-- The Arrows -->
+        <i class="left arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+          </svg></i>
+        <i class="right arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+            <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) ">
+            </path>
+          </svg></i>
+        <!-- Title Bar -->
+        <h1><span><a href="about.html" class="titleBar">
+          Flower Festival - March 27th</a>
+        </span></h1>
+      </div>
         <div class="element hx">
-            <h2>Company Definition</h2>
+            <h2 id="companyD">Company Definition</h2>
             <p>The company is a online shopping company that sells varieties of flowers.
                 By focusing on selling follower, company aims to provide broader range of choices for consumers to
                 choose.
@@ -91,20 +95,16 @@
                         <div class="carousel slide multi-item-carousel" id="theCarousel">
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell1.jpg"
-                                                class="img-responsive"></a></div>
+                                    <div class="col-xs-4"><a href="products.html"><img src="img/bestsell1.jpg" alt="" class="img-responsive"></a></div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell2.jpg"
-                                                class="img-responsive"></a></div>
+                                    <div class="col-xs-4"><a href="products.html"><img src="img/bestsell2.jpg" alt="" class="img-responsive"></a></div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-xs-4" id="hhh"><a href="#1"><img src="img/best sell3.jpg"
-                                                class="img-responsive"></a></div>
+                                    <div class="col-xs-4" id="hhh"><a href="products.html"><img src="img/bestsell3.jpg" alt="" class="img-responsive"></a></div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-xs-4" id="hhh2"><a href="#1"><img src="img/best sell4.jpg"
-                                                class="img-responsive"></a></div>
+                                    <div class="col-xs-4" id="hhh2"><a href="products.html"><img src="img/bestsell4.jpg" alt="" class="img-responsive"></a></div>
                                 </div>
 
                                 <!--  Example item end -->
@@ -118,28 +118,28 @@
                 </div>
             </div>
         </div>
-        <!-- favorite species ----- https://codepen.io/giana/pen/YZWjQy -->
+        <!-- favorite species https://codepen.io/giana/pen/YZWjQy -->
         <div class="species">
-            <h1 class="hx">Favorite Species</h1>
+            <h1 class="hf">Favorite Species</h1>
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div class="photo-container" style="background-image:url(img/img5.jpg);"></div>
                         <h2>Lily of the Valley </h2>
                         <div class="slide">
-                            <p>Lily of the valley, sometimes written lily-of-the-valley, is a sweetly scented, highly
+                            <a href="products.html"><p>Lily of the valley, sometimes written lily-of-the-valley, is a sweetly scented, highly
                                 poisonous woodland flowering plant that is native throughout the cool temperate
-                                Northern Hemisphere in Asia and Europe.</p>
+                                Northern Hemisphere in Asia and Europe.</p></a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="photo-container" style="background-image:url(img/img6.jpg);"></div>
                         <h2>Bee Balm Flower </h2>
                         <div class="slide">
-                            <p>Monarda is a genus of flowering plants in the mint family, Lamiaceae. The genus is
+                            <a href="products.html"><p>Monarda is a genus of flowering plants in the mint family, Lamiaceae. The genus is
                                 endemic to North America. Common names include bee balm, horsemint, oswego tea, and
                                 bergamot, the latter inspired by the fragrance of the leaves, which is reminiscent of
-                                bergamot orange.</p>
+                                bergamot orange.</p></a>
                         </div>
                     </div>
                 </div>
@@ -148,33 +148,33 @@
                         <div class="photo-container" style="background-image:url(img/img3.jpg);"></div>
                         <h2>Lotus</h2>
                         <div class="slide">
-                            <p>Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean
+                            <a href="products.html"><p>Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean
                                 or simply lotus, is one of two extant species of aquatic plant in the family
-                                Nelumbonaceae. </p>
+                                Nelumbonaceae. </p></a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="photo-container" style="background-image:url(img/img4.jpg);"></div>
                         <h2>Nymphea</h2>
                         <div class="slide">
-                            <p>Nymphaea is a genus of hardy and tender aquatic plants in the family Nymphaeaceae. The
-                                genus has a cosmopolitan distribution.</p>
+                            <a href="products.html"><p>Nymphaea is a genus of hardy and tender aquatic plants in the family Nymphaeaceae. The
+                                genus has a cosmopolitan distribution.</p></a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="photo-container" style="background-image:url(img/img1.jpg);"></div>
                         <h2>Hyacinth </h2>
                         <div class="slide">
-                            <p>Hyacinthus is a small genus of bulbous, fragrant flowering plants in the family
-                                Asparagaceae, subfamily Scilloideae. These are commonly called hyacinths.</p>
+                            <a href="products.html"><p>Hyacinthus is a small genus of bulbous, fragrant flowering plants in the family
+                                Asparagaceae, subfamily Scilloideae. These are commonly called hyacinths.</p></a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="photo-container" style="background-image:url(img/img2.jpg);"></div>
                         <h2>Rondeletia</h2>
                         <div class="slide">
-                            <p>Rondeletia is a genus of flowering plants in the family Rubiaceae. It is endemic to the
-                                neotropics. </p>
+                            <a href="products.html"><p>Rondeletia is a genus of flowering plants in the family Rubiaceae. It is endemic to the
+                                neotropics. </p></a>
                         </div>
                     </div>
                 </div>
@@ -189,27 +189,23 @@
                 <div class="col">
                     <h1>Company</h1>
                     <ul>
-                        <li>About</li>
-                        <li>Products</li>
-                        <li>Payment</li>
-
+                            <li><a href="homeV2.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="pay.html">Payment</a></li>
                     </ul>
                 </div>
 
                 <div class="col">
                     <h1>Activities</h1>
                     <ul>
-                        <li>Events</li>
-
-
+                            <li><a href="about.html">Events</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h1>Support</h1>
                     <ul>
-                        <li>Contact us</li>
-                        <li>Social media</li>
-
+                            <li><a href="index.html">Style Guide</a></li>
+                            <li><a href="index.html">Git</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>

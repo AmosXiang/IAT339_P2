@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Pay</title>
-    
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/pay.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,35 +15,41 @@
 
 <body>
 
-    <header>
-        <!-- this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
+  <header>
+      <!-- this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                    <a class="navbar-brand" href="homeV2.html">Foloria</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                <b>    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="homeV2.html">Home</a></li>
-                        <li><a href="products.html">Product</a></li>
-                        <li><a href="cart.html">Cart</a></li>
-                        <li><a href="about.html">Event</a></li>
-                        <li><a href="index.html">Style</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul></b>
-                </div>
-            </div>
-        </nav>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="homeV2.html">Foloria</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
 
+
+                      <ul class="nav navbar-nav navbar-right">
+
+                          <li><a href="homeV2.html"><b>Home</b></a></li>
+                          <li><a href="products.html"><b>Product</b></a></li>
+                          <li><a href="cart.html"><b>Cart</b></a></li>
+                          <li><a href="about.html"><b>Event</b></a></li>
+
+                          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
+                      </ul>
+
+
+              </div>
+          </div>
+
+
+      </nav>
     </header>
 
-
-
+<!-- https://codepen.io/CraigMac1000/pen/QGyyVO?editors=1100 -->
     <div class="creditCardForm">
             <div class="heading">
                 <h1>Confirm Purchase</h1>
@@ -88,43 +94,41 @@
                         </select>
                     </div>
                     <div class="form-group" id="credit_cards">
-                        <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/visa.jpg" id="visa">
-                        <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/mastercard.jpg" id="mastercard">
-                        <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/amex.jpg" id="amex">
+                        <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/visa.jpg" alt="" id="visa">
+                        <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/mastercard.jpg" alt="" id="mastercard">
+                        <img src="http://demo.tutorialzine.com/2016/11/simple-credit-card-validation-form/assets/images/amex.jpg" alt="" id="amex">
                     </div>
                     <div class="form-group" id="pay-now">
-                        <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
+                        <button type="submit" class="btn btn-default" id="confirm-purchase" onclick="myFunction()">Confirm</button>
+
                     </div>
                 </form>
             </div>
         </div>
+
+
         <!-- FOOTER START -->
         <div class="footer">
             <div class="contain">
                 <div class="col">
                     <h1>Company</h1>
                     <ul>
-                        <li>About</li>
-                        <li>Products</li>
-                        <li>Payment</li>
-
+                            <li><a href="homeV2.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="pay.html">Payment</a></li>
                     </ul>
                 </div>
 
                 <div class="col">
                     <h1>Activities</h1>
                     <ul>
-                        <li>Events</li>
-
-
+                            <li><a href="about.html">Events</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h1>Support</h1>
                     <ul>
-                        <li>Contact us</li>
-                        <li>Social media</li>
-
+                            <li><a href="index.html">Style Guide</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"></div>
