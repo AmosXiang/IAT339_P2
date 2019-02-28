@@ -7,9 +7,11 @@
   <title>Style Guide </title>
 
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/mainV2.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -19,26 +21,22 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#myPage">Foloria</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="homeV2.html">Foloria</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
+        <b>  <ul class="nav navbar-nav navbar-right">
             <li><a href="homeV2.html">Home</a></li>
-
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li id="go"><a href="products.html">Festival Collection</a></li>
-                <li id="go1"><a href="#">Delivery FQA</a></li>
-                <li id="go2"><a href="#">Share</a></li>
-              </ul>
-            </li>
+            <li><a href="products.html">Product</a></li>
             <li><a href="cart.html">Cart</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Styly</a></li>
+            <li><a href="about.html">Event</a></li>
+            <li><a href="index.html">Style</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-          </ul>
+          </ul></b>
         </div>
       </div>
     </nav>
@@ -64,7 +62,7 @@
             </svg></i>
         <!-- Title Bar -->
         <span class="titleBar">
-            <h1>On going event.</h1>
+            <h1>Flower Festival - March 27th</h1>
         </span>
     </div>
 
@@ -355,7 +353,42 @@
       </ul>
 
     </section>
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <a href="homeV2.html"><li>About</li></a>
+                    <a href="products.html"><li>Products</li></a>
+                    <a href="pay.html"><li>Payment</li></a>
 
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Activities</h1>
+                <ul>
+                    <a href="about.html"><li>Events</li></a>
+
+
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <a href="about.html"><li>Contact us</li></a>
+
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <footer class="footerL">
+                <p> © 2019 Spring IAT - 339 P2 Hao Xiang/Celia Xu </p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/scrpit.js"></script>
 
     <script src="../IAT339_P02/js/scrpit.js"></script>
 </body>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -19,29 +20,31 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#myPage">Foloria</a>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="homeV2.html">Foloria</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="homeV2.html">Home</a></li>
 
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li id="go"><a href="products.html">Festival Collection</a></li>
-                                <li id="go1"><a href="#">Delivery FQA</a></li>
-                                <li id="go2"><a href="#">Share</a></li>
-                            </ul>
-                        </li>
+                  <b>  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="homeV2.html">Home</a></li>
+                        <li><a href="products.html">Product</a></li>
                         <li><a href="cart.html">Cart</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html">Styly</a></li>
+                        <li><a href="about.html">Event</a></li>
+                        <li><a href="index.html">Style</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul>
+                    </ul></b>
+
                 </div>
             </div>
+
+
         </nav>
+
+
 
 
 
@@ -60,11 +63,12 @@
                     <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
                 </svg></i>
             <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
-                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                        transform="translate(100, 100) rotate(180) "></path>
                 </svg></i>
             <!-- Title Bar -->
             <span class="titleBar">
-                <h1>On going event.</h1>
+                <h1>Flower Festival - March 27th</h1>
             </span>
         </div>
         <div class="element hx">
@@ -87,22 +91,28 @@
                         <div class="carousel slide multi-item-carousel" id="theCarousel">
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell1.jpg" class="img-responsive"></a></div>
+                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell1.jpg"
+                                                class="img-responsive"></a></div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell2.jpg" class="img-responsive"></a></div>
+                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell2.jpg"
+                                                class="img-responsive"></a></div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell3.jpg" class="img-responsive"></a></div>
+                                    <div class="col-xs-4" id="hhh"><a href="#1"><img src="img/best sell3.jpg"
+                                                class="img-responsive"></a></div>
                                 </div>
                                 <div class="item">
-                                    <div class="col-xs-4"><a href="#1"><img src="img/best sell4.jpg" class="img-responsive"></a></div>
+                                    <div class="col-xs-4" id="hhh2"><a href="#1"><img src="img/best sell4.jpg"
+                                                class="img-responsive"></a></div>
                                 </div>
 
                                 <!--  Example item end -->
                             </div>
-                            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                                    class="glyphicon glyphicon-chevron-left"></i></a>
+                            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                                    class="glyphicon glyphicon-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +124,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="photo-container" style="background-image:url(https://source.unsplash.com/600x250/?sig=71);"></div>
+                        <div class="photo-container" style="background-image:url(img/img5.jpg);"></div>
                         <h2>Lily of the Valley </h2>
                         <div class="slide">
                             <p>Lily of the valley, sometimes written lily-of-the-valley, is a sweetly scented, highly
@@ -123,7 +133,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo-container" style="background-image:url(https://source.unsplash.com/600x250/?sig=60);"></div>
+                        <div class="photo-container" style="background-image:url(img/img6.jpg);"></div>
                         <h2>Bee Balm Flower </h2>
                         <div class="slide">
                             <p>Monarda is a genus of flowering plants in the mint family, Lamiaceae. The genus is
@@ -135,7 +145,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="photo-container" style="background-image:url(https://source.unsplash.com/600x250/?sig=106);"></div>
+                        <div class="photo-container" style="background-image:url(img/img3.jpg);"></div>
                         <h2>Lotus</h2>
                         <div class="slide">
                             <p>Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean
@@ -144,7 +154,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo-container" style="background-image:url(https://source.unsplash.com/600x250/?sig=163);"></div>
+                        <div class="photo-container" style="background-image:url(img/img4.jpg);"></div>
                         <h2>Nymphea</h2>
                         <div class="slide">
                             <p>Nymphaea is a genus of hardy and tender aquatic plants in the family Nymphaeaceae. The
@@ -152,7 +162,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo-container" style="background-image:url(https://source.unsplash.com/600x250/?sig=39);"></div>
+                        <div class="photo-container" style="background-image:url(img/img1.jpg);"></div>
                         <h2>Hyacinth </h2>
                         <div class="slide">
                             <p>Hyacinthus is a small genus of bulbous, fragrant flowering plants in the family
@@ -160,7 +170,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="photo-container" style="background-image:url(https://source.unsplash.com/600x250/?sig=137);"></div>
+                        <div class="photo-container" style="background-image:url(img/img2.jpg);"></div>
                         <h2>Rondeletia</h2>
                         <div class="slide">
                             <p>Rondeletia is a genus of flowering plants in the family Rubiaceae. It is endemic to the
@@ -169,7 +179,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+
         </div>
 
         <!-- FOOTER START -->
@@ -178,9 +189,9 @@
                 <div class="col">
                     <h1>Company</h1>
                     <ul>
-                        <li>About</li>
-                        <li>Products</li>
-                        <li>Payment</li>
+                        <a href="homeV2.html"><li>About</li></a>
+                        <a href="products.html"><li>Products</li></a>
+                        <a href="pay.html"><li>Payment</li></a>
 
                     </ul>
                 </div>
@@ -188,7 +199,7 @@
                 <div class="col">
                     <h1>Activities</h1>
                     <ul>
-                        <li>Events</li>
+                        <a href="about.html"><li>Events</li></a>
 
 
                     </ul>
@@ -196,14 +207,14 @@
                 <div class="col">
                     <h1>Support</h1>
                     <ul>
-                        <li>Contact us</li>
-                        <li>Social media</li>
+                        <a href="about.html"><li>Contact us</li></a>
+
 
                     </ul>
                 </div>
                 <div class="clearfix"></div>
                 <footer class="footerL">
-                    <p> © 2019 Spring IAT - 339 P2 Hao Xiang </p>
+                    <p> © 2019 Spring IAT - 339 P2 Hao Xiang/Celia Xu </p>
                 </footer>
             </div>
         </div>

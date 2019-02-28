@@ -1,7 +1,11 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
+
+* {
+  box-sizing: border-box;
+}
 
 @font-face {
     font-family: 'audreyitalic';
@@ -89,8 +93,8 @@ body {
     padding: 2rem;
     text-decoration: none;
   }
-  
-  
+
+
   .element {
     padding-bottom: 2rem;
     border-top-width: 0.15rem;
@@ -102,24 +106,24 @@ body {
   .element p{
     font-family: audreyregular, sans-serif;
   }
-  
+
   h2 {
     margin-top: 6rem;
   }
-  
+
   h3 {
     font-style: italic;
     margin-top: 1rem;
   }
-  
+
   h4 {
     margin-bottom: 0.25rem;
   }
-  
+
 
   p {
     color:rgb(70,70,70);
-   
+
   }
  .figurer p{
     margin-top: 0;
@@ -131,18 +135,18 @@ body {
   nav a:hover, nav a:focus {
     text-decoration: none;
   }
-  
+
   code {
     background-color: #EEE;
     padding: 0.5rem;
     display: block;
   }
-  
-  
-  /* 
+
+
+  /*
     INTERACTIVE ELEMENTS -------------------
   */
-  
+
   /* Styling for the navigation button */
   .button-nav {
     display: inline-block;
@@ -150,21 +154,21 @@ body {
     color: white;
     background-color: rgb(50,50,50);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.5s;
   }
-  
+
   .button-nav:hover, .button-nav:focus {
     background-color: rgb(200,200,200);
   }
-  
+
   .nav-hove {
     display: inline-block;
     padding: 0.4rem;
     color: rgb(106, 248, 217);
     background-color: rgb(50,50,50);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.5s;
   }
   .nav-hove:hover, .button-nav:focus {
@@ -176,20 +180,20 @@ body {
     color: rgb(106, 248, 217);
     background-color: rgb(50,50,50);
     text-decoration: none;
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.5s;
   }
   .image-link:hover, .button-nav:focus {
     background-color: rgb(240, 149, 149);
   }
-  /* 
+  /*
     TEXT ELEMENTS -------------------
   */
   .paragh{
     width:70%;
   }
-  
-  /* 
+
+  /*
     COMBINED ELEMENTS -------------------
   */
   input:focus{
@@ -197,20 +201,20 @@ body {
     box-shadow: 0px 0px 5px #61C5FA;
     border:1px solid #5AB0DB;
   }
-  
+
   input:hover {
     border: 1px solid #999;
     border-radius: 5px;
   }
-  
+
   input:focus:hover{
     outline: none;
     box-shadow: 0px 0px 5px #61C5FA;
     border:1px solid #5AB0DB;
     border-radius:0;
-    
+
   }
-  
+
   *,
   *:before,
   *:after {
@@ -225,8 +229,8 @@ body {
   }
   fieldset {
     border: 0;
-    
-   
+
+
   }
   input {
     border-radius: 5px;
@@ -245,8 +249,8 @@ body {
  /* this nav bar is learnd from https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h  */
 .navbar-header{
     font-family: audreybold_italic, sans-serif;
-    
-} 
+
+}
 .navbar {
     font-family: audreyregular, sans-serif;
     margin-bottom: 0;
@@ -256,23 +260,23 @@ body {
     letter-spacing: 4px;
     opacity: 1;
   }
-  .navbar li a, .navbar .navbar-brand { 
+  .navbar li a, .navbar .navbar-brand {
     color: #2e2e2e !important;
   }
   .navbar-nav li a:hover {
     color: rgb(99, 163, 108) !important;
-    border-top:0.2rem #2e2e2e solid; 
+    /* border-top:0.2rem #2e2e2e solid; */
   }
-  #go :hover{
-    border-top:0rem #2e2e2e solid; 
+  /* #go :hover{
+    border-top:0rem #2e2e2e solid;
   }
   #go1 :hover{
-    border-top:0rem #2e2e2e solid; 
+    border-top:0rem #2e2e2e solid;
   }
   #go2 :hover{
-    border-top:0rem #2e2e2e solid; 
-  }
- 
+    border-top:0rem #2e2e2e solid;
+  } */
+
   .navbar-nav li.active a {
     color: #fff !important;
     background-color: rgb(99, 163, 108) !important;
@@ -290,7 +294,7 @@ body {
   .dropdown-menu li a:hover {
     background-color: rgb(221, 240, 170) !important;
   }
-  
+
   .product-list p{
     float:left;
     padding-left:1rem;
@@ -303,7 +307,7 @@ body {
     flex-wrap:wrap;
     justify-content: center;
     margin-top:0.5rem;
-   
+
     margin-right: 2rem;
     width:80%;
     padding-left: 20%;
@@ -338,11 +342,11 @@ body {
     margin:0rem;
     display: block;
     float:right;
-    
+
   }
   .intext-link:hover, .intext-link:focus{
     color:rgb(140, 158, 89);
-    transition-property: background-color; 
+    transition-property: background-color;
     transition-duration: 0.5s;
   }
   .cart{
@@ -358,11 +362,11 @@ body {
     text-transform: uppercase;
     padding-left: 1.4rem;
   }
-  
+
   .cart a {
     display:block;
   }
-  
+
   .cart:hover, .cart:focus {
     text-decoration: none;
     color:rgb(202, 237, 169);
@@ -371,12 +375,12 @@ body {
     transition-property: color;
     transition-property: background-color;
     transition-duration: 0.5s;
-    
+
   }
   .checkOut{
     font-size:1.2rem;
     padding: 0.5rem 0.7rem;
-    
+
     color:white;
     background-color:rgb(177, 192, 134);
     text-decoration: none;
@@ -386,13 +390,13 @@ body {
     margin-bottom: .5rem;
     text-transform: uppercase;
     padding-left: 1.4rem;
-    
+
   }
-  
+
   .checkOut a {
     display:block;
   }
-  
+
   .checkOut:hover, .checkOut:focus {
     text-decoration: none;
     color:rgb(202, 237, 169);
@@ -404,7 +408,7 @@ body {
   }
 
   .Cancel{
-    font-size:0.8rem;
+    font-size:1.2rem;
     padding: 0.5rem 0.7rem;
     color:rgb(202, 237, 169);
     border:0.05rem rgb(221, 240, 170) solid;
@@ -415,13 +419,13 @@ body {
     margin-bottom: .5rem;
     text-transform: uppercase;
     padding-left: 1.4rem;
-    
+
   }
-  
+
   .Cancel a {
     display:block;
   }
-  
+
   .Cancel:hover, .Cancel:focus {
     text-decoration: none;
     color:rgb(202, 237, 169);
@@ -445,11 +449,11 @@ body {
     padding-left: 1.4rem;
     width:10%;
   }
-  
+
   .confrom a {
     display:block;
   }
-  
+
   .confrom:hover, .confrom:focus {
     text-decoration: none;
     color:rgb(202, 237, 169);
@@ -480,7 +484,7 @@ body {
   .container {
     display: block;
     position: relative;
- 
+
     margin-bottom: 1.8rem ;
     cursor: pointer;
     font-size: 1.5rem;
@@ -489,7 +493,7 @@ body {
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   /* Hide the browser's default radio button */
   .container input {
     position: absolute;
@@ -500,18 +504,18 @@ body {
 .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
-  
+
   /* When the radio button is checked, add a yellow background */
   .container input:checked ~ .checkmark {
     background-color: rgb(177, 192, 134);
   }
-  
+
 
 /* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
+
   /* Style the indicator (dot/circle) */
   .container .checkmark:after {
     top: 0.37rem;
@@ -531,7 +535,7 @@ body {
     padding:0.2rem;
     display:inline-block;
     width: 10rem;
-  } 
+  }
 
   /* top image on product */
   /* http://photographybyemma.ca/wp-content/uploads/2018/09/0006-PBE-Branding-Shoot-Details_PhotosbyEmmaH_WEB.jpg */
@@ -562,7 +566,7 @@ body {
 .header-big{
   text-align: center;
   margin-top:3rem;
-  
+
 }
 
 .more{
@@ -571,7 +575,7 @@ body {
   margin-top:3rem;
   align-self:center;
   justify-content: center;
-  
+
 }
 
 .more p{
@@ -596,7 +600,7 @@ margin-top: 10rem;
 
 /* https://codepen.io/EricPorter/pen/XaOEpP */
 
-.slider, 
+.slider,
 .slider > div {
     /* Images default to Center Center. Maybe try 'center top'? */
     background-position: center center;

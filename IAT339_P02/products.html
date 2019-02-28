@@ -4,10 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Products</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/mainV2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/product.js"></script>
 </head>
 
 <body>
@@ -16,26 +20,22 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#myPage">Foloria</a>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="homeV2.html">Foloria</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
+                <b>    <ul class="nav navbar-nav navbar-right">
                         <li><a href="homeV2.html">Home</a></li>
-
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product
-                                <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li id="go"><a href="products.html">Festival Collection</a></li>
-                                <li id="go1"><a href="#">Delivery FQA</a></li>
-                                <li id="go2"><a href="#">Share</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="products.html">Product</a></li>
                         <li><a href="cart.html">Cart</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html">Styly</a></li>
+                        <li><a href="about.html">Event</a></li>
+                        <li><a href="index.html">Style</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-                    </ul>
+                    </ul></b>
                 </div>
             </div>
         </nav>
@@ -53,60 +53,238 @@
                 Flowers can bring people pleasure and a wonderful memory. </p>
         </div>
     </div>
-    <div class="product-list">
-        <div class="box">
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/flower.jpg" alt="sample of Limited Edition"></a>
-                <div class="figurer">
-                    <p>Limited Edition</p>
-                    <div class="price">
-                        <p>$999.99</p>
-                    </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
 
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/rose.jpg" alt="rose flower"></a>
-                <div class="figurer">
-                    <p>Lovers</p>
-                    <div class="price">
-                        <p>$299.99</p>
-                    </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
+    <!-- product list cite: https://codepen.io/mmcshinsky/pen/ogHxi-->
 
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/red.jpg" alt="Red flower"></a>
-                <div class="figurer">
-                    <p>Publica</p>
-                    <div class="price">
-                        <p>$399.99</p>
-                    </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
 
-            <div class="divFont">
-                <a class="image-Link" href="#"><img class="click-img" src="img/glory.jpg" alt="goldn glory"></a>
-                <div class="figurer">
-                    <p>Golden Glory</p>
-                    <div class="price">
-                        <p>$599.99</p>
+    <div class="product_grid">
+        <div class="element">
+            <ul class="product_list list">
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
                     </div>
-                </div>
-                <a class="intext-link" href="#">See Full Details</a>
-                <a class="cart" href="cart.html">Add to cart</a>
-            </div>
+                    <div class="product_image">
+                        <img src="img/Hyacinth.jpg" alt="" class="image">
+                        <div class="middle">
+                          <div class="text"><p class="truncate">Hyacinthus orientalis, is a species of flowering plant in the family Asparagaceae, subfamily Scilloidiae, native to southwestern Asia, Turkey.</p></div>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fas fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>Hyacinth</h5>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_old">$79.99</span> <span class="price_new">$69.99</span>
+                            <span class="product_rating"></span>
+                        </div>
+                        <!-- <div class="product_desc">
+                            <p class="truncate"></p>
+                        </div> -->
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_image">
+                        <img src="img/Lily.jpg" alt="" class="image">
+                        <div class="middle">
+                          <div class="text"><p class="truncate">Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large prominent flowers. Lilies are a group of flowering plants.</p></div>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>Lily</h5>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_new">$69.99</span>
+                            <span class="product_rating"></span>
+                        </div>
+
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
+                    </div>
+                    <div class="product_image">
+                        <img src="img/Arum-lily.jpg" alt=""class="image">
+                        <div class="middle">
+                          <div class="text"><p class="truncate">Zantedeschia aethiopica is a species in the family Araceae, native to southern Africa in Lesotho, South Africa, and Swaziland.</p></div>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>Arum-lily</h5>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_old">$79.99</span> <span class="price_new">$69.99</span>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_image">
+                        <img src="img/Carnation.jpg" alt="" class="image">
+                        <div class="middle">
+                          <div class="text"><p class="truncate">Dianthus caryophyllus, the carnation or clove pink, is a species of Dianthus. It is probably native to the Mediterranean region but its exact range is unknown.</p></div>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>Carnation</h5>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_new">$69.99</span>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_sale">
+                        <p>On Sale</p>
+                    </div>
+                    <div class="product_image">
+                      <!-- this moving image is learned from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity -->
+                        <img src="img/Common sunflower.jpg" alt="" class="image">
+                        <div class="middle">
+                          <div class="text"><p class="truncate">Helianthus annuus, the common sunflower, is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits.</p></div>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>Helianthus annuus</h5>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_old">$79.99</span> <span class="price_new">$69.99</span>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="product_item">
+                    <div class="product_image">
+                        <img src="img/Gypsophila paniculata.jpg" alt="" class="image">
+                        <div class="middle">
+                          <div class="text"><p class="truncate">Gypsophila paniculata is a species of flowering plant in the Caryophyllaceae family, native to central and eastern Europe.</p></div>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+
+                        </div>
+                    </div>
+                    <div class="product_values">
+                        <div class="product_title">
+                            <h5>Gypsophila paniculata</h5>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_new">$69.99</span>
+                            <span class="product_rating"></span>
+                        </div>
+                        <div class="product_buttons">
+                            <button class="product_heart"><i class="fa fa-heart"></i></button>
+                            <!-- <button class="product_compare"><i class="fa fa-random"></i></button> -->
+                            <button class="add_to_cart"><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <footer>
-        <p> © 2019 Spring IAT-339 P1 Hao Xiang </p>
-    </footer>
+
+    <!-- productlist end -->
+    <!-- FOOTER START -->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <a href="homeV2.html"><li>About</li></a>
+                    <a href="products.html"><li>Products</li></a>
+                    <a href="pay.html"><li>Payment</li></a>
+
+                </ul>
+            </div>
+
+            <div class="col">
+                <h1>Activities</h1>
+                <ul>
+                    <a href="about.html"><li>Events</li></a>
+
+
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <a href="about.html"><li>Contact us</li></a>
+
+
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <footer class="footerL">
+                <p> © 2019 Spring IAT - 339 P2 Hao Xiang/Celia Xu </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/scrpit.js"></script>
+
 </body>
 
 </html>
